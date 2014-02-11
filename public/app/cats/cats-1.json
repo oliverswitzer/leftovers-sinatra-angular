@@ -1,0 +1,10 @@
+[
+    { "id": 1,
+      "name": "bigbelly",
+      "bio": "Emerged into consciousness how far away shores of the cosmic ocean Cambrian explosion",
+      "color": "white",
+      "personality": "relaxed",
+      "planets": 2,
+      "available": false,
+      "images": ["img/spacecats/bigbelly", "img/spacecats/bigbelly_inv"]}
+]

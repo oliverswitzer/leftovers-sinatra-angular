@@ -2,7 +2,7 @@ require 'bundler'
 Bundler.require
 
 require 'sinatra/activerecord'
-require './lib/restaurant'
+Dir["./lib/*.rb"].each {|file| require file }
 
 module Name
   class App < Sinatra::Application

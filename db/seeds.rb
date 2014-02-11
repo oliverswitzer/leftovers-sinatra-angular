@@ -34,3 +34,51 @@
 #       "color" => "brown",
 #       "personality" => "relaxed",
 #       "planets" => 7)
+
+Restaurant.create!(
+    "name" => "Poop",
+    "address" => "21 Jumpstreet",
+    "phone" => "718-555-0808"
+    )
+Restaurant.create!(
+    "name" => "Test",
+    "address" => "78 Poop Street",
+    "phone" => "718-555-0808"
+    )
+Restaurant.create!(
+    "name" => "Tony's Pizza",
+    "address" => "12 Jumpstreet",
+    "phone" => "718-555-0808"
+    )
+Restaurant.create!(
+    "name" => "Test2",
+    "address" => "21 Jumpstreet",
+    "phone" => "718-555-0808"
+    )
+
+
+Shelter.create!(
+  "name" => "Test", 
+  "address" => "21 Jumpstreet",
+    "phone" => "718-555-0808"
+  )
+Shelter.create!(
+  "name" => "Test2", 
+  "address" => "21 Jumpstreet",
+    "phone" => "718-555-0808"
+  )
+Shelter.create!(
+  "name" => "Test3", 
+  "address" => "21 Jumpstreet",
+    "phone" => "718-555-0808"
+  )
+Shelter.create!(
+  "name" => "Test4", 
+  "address" => "21 Jumpstreet",
+    "phone" => "718-555-0808"
+  )
+
+
+
+
+

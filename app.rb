@@ -16,6 +16,8 @@ class App < Sinatra::Application
     File.read(File.join('public/app', 'index.html'))
   end
 
+  # http://www.dotnetguy.co.uk/post/2011/10/31/convert-dates-between-ruby-and-javascript/
+
   get '/spacecats' do
     # @spacecats = Spacecat.all
 

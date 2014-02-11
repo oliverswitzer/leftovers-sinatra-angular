@@ -5,6 +5,7 @@ require 'sinatra/activerecord'
 require './lib/restaurant'
 require './lib/pickup'
 require './lib/shelter'
+require 'debugger'
 
 Dir["./lib/*.rb"].each {|file| require file }
 
@@ -59,8 +60,9 @@ module Name
     end
 
     post '/pickups' do
+      debugger
       @pickup = Pickup.new(params[:pickup])
-      # @pickup.restaurant = Restaurant.find(params[:rest_id])
+      redirect '/'
     end
 
   end

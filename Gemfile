@@ -9,4 +9,5 @@ gem "rake"
 group :development do
   gem "shotgun"
   gem "tux"
+  gem "debugger"
 end

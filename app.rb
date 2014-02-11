@@ -6,6 +6,8 @@ require './lib/restaurant'
 require './lib/pickup'
 require './lib/shelter'
 
+Dir["./lib/*.rb"].each {|file| require file }
+
 module Name
   class App < Sinatra::Application
 

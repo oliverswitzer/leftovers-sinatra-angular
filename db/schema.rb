@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140211030141) do
+ActiveRecord::Schema.define(version: 20140211034922) do
 
   create_table "spacecats", force: true do |t|
     t.string   "name"
@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 20140211030141) do
     t.integer  "planets"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.text     "images"
   end
 
 end

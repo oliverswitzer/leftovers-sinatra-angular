@@ -1,5 +1,15 @@
 'use strict';
 
+var leftoversControllers = angular.module('leftoversControllers',[]);
+
+leftoversControllers.controller('PickupListCtrl', ['$scope','$http',
+	function($scope, $http){
+    $http.get('http://localhost:9393/pickups').success(function(data) {
+      $scope.pickups = data;
+    });
+  }
+	]);
+
 
 
 

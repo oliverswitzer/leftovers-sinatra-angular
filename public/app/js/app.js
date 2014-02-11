@@ -10,6 +10,18 @@
 // ngRoutes - allows us to use angular-route.js
 // spacecatControllers - al
 
+var leftoversApp = angular.module('leftoversApp',['ngRoute',
+'leftoversControllers']);
+
+leftoversApp.config(['$routeProvider', function($routeProvider){
+	$routeProvider.when("/pickups", {
+		templateUrl: "partials/pickups.html",
+		controller: "PickupListCtrl"
+	});
+
+}]);
+
+
 
 
 

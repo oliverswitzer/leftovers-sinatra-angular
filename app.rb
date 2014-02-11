@@ -2,9 +2,8 @@ require 'bundler'
 Bundler.require
 
 require 'sinatra/activerecord'
-require './lib/spacecat'
 
-class SpacecatApp < Sinatra::Application
+class App < Sinatra::Application
 
   configure do
     set :root, File.dirname(__FILE__)
@@ -18,15 +17,13 @@ class SpacecatApp < Sinatra::Application
   end
 
   get '/spacecats' do
-    @spacecats = Spacecat.all
+    # @spacecats = Spacecat.all
 
-    @spacecats.to_json
+    # @spacecats.to_json
   end
 
   get '/spacecats/:id' do
-    @spacecat = Spacecat.find(params[:id])
-
-    @spacecat.to_json
+  
   end
 
 end

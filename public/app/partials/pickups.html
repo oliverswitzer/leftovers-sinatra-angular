@@ -1,3 +1,6 @@
+<form>
+  <input ng-model="query"></input>
+</form>
 <table>
   <tr>
     <th>Restaurant Name</th>
@@ -6,9 +9,7 @@
     <th>Quantity (# meals)</th>
     <th>Closing Time</th>
   </tr>
-  <tr ng-repeat="pickup in pickups">
-    <td>{{pickup.restaurant}}</td>
+  <tr ng-repeat="pickup in pickups | filter: query">
+    <td>{{pickup.restaurant.name}}</td>
   </tr>
 </table>
-
-{{pickups}}

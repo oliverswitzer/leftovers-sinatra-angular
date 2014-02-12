@@ -2,9 +2,6 @@ require 'bundler'
 Bundler.require
 
 require 'sinatra/activerecord'
-require './lib/restaurant'
-require './lib/pickup'
-require './lib/shelter'
 require 'debugger'
 
 Dir["./lib/*.rb"].each {|file| require file }
@@ -56,11 +53,10 @@ module Name
 
     get '/pickups' do
       @pickups = Pickup.all
-      @pickups.to_json
+      @pickups.to_json(:include => [:restaurant, :shelter])
     end
 
     post '/pickups' do
-      debugger
       @pickup = Pickup.new(params[:pickup])
       redirect '/'
     end

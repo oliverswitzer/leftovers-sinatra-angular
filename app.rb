@@ -52,6 +52,7 @@ module Name
     end
 
     get '/pickups' do
+      debugger
       @pickups = Pickup.all
       @pickups.to_json(:include => [:restaurant, :shelter])
     end

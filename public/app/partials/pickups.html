@@ -17,3 +17,43 @@
     <td>{{pickup.closing_time | date:'mediumTime'}}</td>
   </tr>
 </table>
+
+<script type="text/javascript">
+var map;
+var service;
+var infowindow;
+var lat;
+var lng;
+
+function initialize() {
+  navigator.geolocation.getCurrentPosition(function(position){ lat = position.coords.latitude;
+    lng = position.coords.longitude });
+  var here = new google.maps.LatLng(parseFloat(lat),parseFloat(lng));
+
+  map = new google.maps.Map(document.getElementById('map'), {
+      center: here,
+      zoom: 15
+    });
+
+  var request = {
+    location: here,
+    radius: '500',
+    types: ['restaurants']
+  };
+
+  service = new google.maps.places.PlacesService(map);
+  service.nearbySearch(request, callback);
+}
+
+function callback(results, status) {
+  console.log(status);
+  if (status == google.maps.places.PlacesServiceStatus.OK) {
+    for (var i = 0; i < results.length; i++) {
+      var place = results[i];
+      console.log(results[i]);
+    }
+  }
+}
+</script>
+
+<div id="map"></div>

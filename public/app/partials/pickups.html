@@ -11,5 +11,12 @@
   </tr>
   <tr ng-repeat="pickup in pickups | filter: query">
     <td>{{pickup.restaurant.name}}</td>
+    <td>{{pickup.restaurant.address}}</td>
+    <td>{{pickup.food_description}}</td>
+    <td>{{pickup.meals}}</td>
+    <td>{{pickup.closing_time}}</td>
+  </tr>
+  <tr>
+    <td>{{ 1 + 2}}</td>
   </tr>
 </table>

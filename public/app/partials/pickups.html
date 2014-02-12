@@ -14,9 +14,6 @@
     <td>{{pickup.restaurant.address}}</td>
     <td>{{pickup.food_description}}</td>
     <td>{{pickup.meals}}</td>
-    <td>{{pickup.closing_time}}</td>
-  </tr>
-  <tr>
-    <td>{{ 1 + 2}}</td>
+    <td>{{pickup.closing_time | date:'mediumTime'}}</td>
   </tr>
 </table>

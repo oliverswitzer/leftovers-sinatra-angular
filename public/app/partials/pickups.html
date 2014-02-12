@@ -5,10 +5,14 @@
     <th>Food Description</th>
     <th>Quantity (# meals)</th>
     <th>Closing Time</th>
+    <th>Status</th>
   </tr>
   <tr ng-repeat="pickup in pickups">
-    <td>{{pickup.restaurant}}</td>
+    <td>{{pickup.restaurant.name}}</td>
+    <td>{{pickup.restaurant.address}}</td>
+    <td>{{pickup.food_description}}</td>
+    <td>{{pickup.meals}}</td>
+    <td>{{pickup.closing_time}}</td>
   </tr>
 </table>
 
-{{pickups}}

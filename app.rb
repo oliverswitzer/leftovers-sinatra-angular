@@ -52,15 +52,19 @@ module Name
     end
 
     get '/pickups' do
-      debugger
       @pickups = Pickup.all
       @pickups.to_json(:include => [:restaurant, :shelter])
+    end
+
+    get '/pickups/new' do
+      erb :pickup_form
     end
 
     post '/pickups' do
       @pickup = Pickup.new(params[:pickup])
       redirect '/'
     end
+
 
   end
 end

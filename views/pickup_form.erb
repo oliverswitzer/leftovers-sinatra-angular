@@ -6,7 +6,7 @@
 
 <div class="daform">
   <form method="POST" action="http://localhost:9292/pickups">
-    <input type="hidden" name="place_data" id="hidden"></input>
+    <input type="hidden" name="restaurant_data" id="hidden"></input>
 
 
     <div>
@@ -29,8 +29,8 @@
 
     <div>
       <label for="closing_time">Closing Time</label>
-
-      <input type="text" id="timePicker" name="pickup[closing_time]" autocomplete="off">
+      <input type="text" id="datePicker" name="pickup[closing_time][date]" class="date"/>
+      <input type="text" id="timePicker" name="pickup[closing_time][time]" autocomplete="off"/>
     </div>
 
     <button type="submit">Create new Pickup</button>
@@ -40,6 +40,7 @@
 
 <script type="text/javascript" src="/js/map.js"></script>
 <script type="text/javascript" src="/js/jquery.timepicker.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap-datepicker.js"></script>
 <script type="text/javascript">
  
 $(document).ready(function() {
@@ -51,6 +52,10 @@ $(document).ready(function() {
     $form.fadeIn('slow');
   });
 
-  $('#timePicker').timepicker({ 'scrollDefaultNow': true });  
+  $('#timePicker').timepicker({ 'scrollDefaultNow': true });
+  $('#datePicker').datepicker({
+        'format': 'm/d/yyyy',
+        'autoclose': true
+    });  
 });
 </script>

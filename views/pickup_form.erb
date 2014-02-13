@@ -4,20 +4,14 @@
     placeholder="Enter your restaurant">
 <input type="submit" id='submit-map' class="controls"></input>
 
-<input type='hidden' id='poop' data-poop="YES YOU GOT THE POOP"></input>
 <div class="daform">
   <form method="POST" action="http://localhost:9292/pickups">
     <input type="hidden" name="place_data" id="hidden"></input>
 
-    <div>
-      <label for="closing_time">Closing Time</label>
-
-      <input type="text" id="timePicker" autocomplete="off">
-    </div>
 
     <div>
       <label for="food_description">Food Description:</label>
-      <input type="text" name="pickup[food_description]"/>
+      <textarea id="food_description" placeholder="Describe your food here..." name="pickup[food_description]"></textarea>
     </div>
 
     <div>
@@ -31,6 +25,12 @@
         <option value="6">6</option>
         <option value="7">7</option>
       </select>
+    </div>
+
+    <div>
+      <label for="closing_time">Closing Time</label>
+
+      <input type="text" id="timePicker" name="pickup[closing_time]" autocomplete="off">
     </div>
 
     <button type="submit">Create new Pickup</button>
@@ -51,7 +51,6 @@ $(document).ready(function() {
     $form.fadeIn('slow');
   });
 
-  $('#timePicker').timepicker();
-  
+  $('#timePicker').timepicker({ 'scrollDefaultNow': true });  
 });
 </script>

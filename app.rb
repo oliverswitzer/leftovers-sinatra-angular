@@ -61,6 +61,7 @@ module Name
     end
 
     post '/pickups' do
+      debugger
       @pickup = Pickup.new(params[:pickup])
       redirect '/'
     end

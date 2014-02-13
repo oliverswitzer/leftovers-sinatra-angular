@@ -51,3 +51,12 @@
 #submit-map {
   cursor: pointer;
 }
+
+#new-pickup-btn{
+  float: right;
+  margin: 10px;
+}
+
+.input-error{
+  border-color: red;
+}

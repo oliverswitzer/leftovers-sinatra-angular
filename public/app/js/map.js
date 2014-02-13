@@ -34,7 +34,7 @@ function initialize() {
       if (!place.geometry) {
         return;
       }
-
+      $("#pac-input").removeClass("input-error");
       $("#hidden").attr("value",JSON.stringify({
                                                 name: place.name, 
                                                 address: place.formatted_address, 

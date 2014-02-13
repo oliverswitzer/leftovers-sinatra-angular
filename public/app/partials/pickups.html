@@ -1,6 +1,6 @@
-<form>
-  <input ng-model="query"></input>
-</form>
+<input ng-model="query"></input>
+<a href="/pickups/new"><button id="new-pickup-btn" class="btn">New Pickup</button></a>
+
 <table>
   <tr>
     <th>Restaurant Name</th>
@@ -18,48 +18,4 @@
   </tr>
 </table>
 
-<div id="map"></div>
-
-
-<script type="text/javascript">
-  $(function() {
-    initialize();   
-  })
-  
-  var map;
-  var service;
-  var infowindow;
-  var lat;
-  var lng;
-
-  function initialize() {
-    navigator.geolocation.getCurrentPosition(function(position){ lat = position.coords.latitude;
-      lng = position.coords.longitude });
-    var here = new google.maps.LatLng(parseFloat(lat),parseFloat(lng));
-
-    map = new google.maps.Map(document.getElementById('map'), {
-        center: here,
-        zoom: 15
-      });
-
-    var request = {
-      location: here,
-      radius: '500',
-      types: ['restaurant']
-    };
-
-    service = new google.maps.places.PlacesService(map);
-    service.nearbySearch(request, callback);
-  }
-
-  function callback(results, status) {
-    console.log(status);
-    if (status == google.maps.places.PlacesServiceStatus.OK) {
-      for (var i = 0; i < results.length; i++) {
-        var place = results[i];
-        console.log(results[i]);
-      }
-    }
-  }
-</script>
 

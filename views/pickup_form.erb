@@ -48,8 +48,14 @@ $(document).ready(function() {
   var $map = $('#map-canvas');
 
   $('#submit-map').on('click', function() {
-    $map.fadeOut('slow');
-    $form.fadeIn('slow');
+    
+    if($("#hidden").attr("value") && $("#pac-input").val()){
+      $map.fadeOut('medium', function() {
+        $form.fadeIn('slow');
+      });
+    }else{
+      $("#pac-input").addClass("input-error");
+    }
   });
 
   $('#timePicker').timepicker({ 'scrollDefaultNow': true });

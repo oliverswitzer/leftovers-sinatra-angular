@@ -61,7 +61,7 @@ module Name
     end
 
     post '/pickups' do
-      debugger
+      # debugger
       Pickup.new_pickup(params)
       redirect '/'
     end

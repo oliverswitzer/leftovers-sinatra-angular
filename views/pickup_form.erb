@@ -6,43 +6,23 @@
 
 <input type='hidden' id='poop' data-poop="YES YOU GOT THE POOP"></input>
 <div class="daform">
-  <form method="POST" action="http://localhost:9393/pickups">
+  <form method="POST" action="http://localhost:9292/pickups">
+    <input type="hidden" name="place_data" id="hidden"></input>
+
     <div>
       <label for="closing_time">Closing Time</label>
 
       <input type="text" id="timePicker" autocomplete="off">
-  <!-- 
-      <select name="closing_time">
-        <option value="8:00 PM">8:00 PM</option>
-        <option value="8:15 PM">8:15 PM</option>
-        <option value="8:30 PM">8:30 PM</option>
-        <option value="8:45 PM">8:45 PM</option>
-       
-        <option value="9:00 PM">9:00 PM</option>
-        <option value="9:15 PM">9:15 PM</option>
-        <option value="9:30 PM">9:30 PM</option>
-        <option value="9:45 PM">9:45 PM</option>
-       
-        <option value="10:00 PM">10:00 PM</option>
-        <option value="10:15 PM">10:15 PM</option>
-        <option value="10:30 PM">10:30 PM</option>
-        <option value="10:45 PM">10:45 PM</option>
-       
-        <option value="11:00 PM">11:00 PM</option>
-        <option value="11:15 PM">11:15 PM</option>
-        <option value="11:30 PM">11:30 PM</option>
-        <option value="11:45 PM">11:45 PM</option>
-      </select> -->
     </div>
 
     <div>
       <label for="food_description">Food Description:</label>
-      <input type="text" name="food_description"/>
+      <input type="text" name="pickup[food_description]"/>
     </div>
 
     <div>
       <label for="meals">Quantity (# of meals)</label>
-      <select name="meals">
+      <select name="pickup[meals]">
         <option value="1">1</option>
         <option value="2">2</option>
         <option value="3">3</option>

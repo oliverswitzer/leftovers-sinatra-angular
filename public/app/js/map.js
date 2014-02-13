@@ -35,7 +35,13 @@ function initialize() {
         return;
       }
 
-      console.log(place);
+      $("#hidden").attr("value",JSON.stringify({
+                                                name: place.name, 
+                                                address: place.formatted_address, 
+                                                latitude: place.geometry.location.d,
+                                                longitude: place.geometry.location.e,
+                                                phone: place.formatted_phone_number
+                                              }));
 
       // If the place has a geometry, then present it on a map.
       if (place.geometry.viewport) {

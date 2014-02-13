@@ -6,10 +6,12 @@
 
 
 <div class="daform">
-  <form method="POST" action="http://localhost:9393/pickups">
+  <form method="POST" action="http://localhost:9292/pickups">
+    <input type="hidden" name="place_data" id="hidden"></input>
+
     <div>
       <label for="closing_time">Closing Time</label>
-      <select name="closing_time">
+      <select name="pickup[closing_time]">
         <option value="8:00 PM">8:00 PM</option>
         <option value="8:15 PM">8:15 PM</option>
         <option value="8:30 PM">8:30 PM</option>
@@ -34,12 +36,12 @@
 
     <div>
       <label for="food_description">Food Description:</label>
-      <input type="text" name="food_description"/>
+      <input type="text" name="pickup[food_description]"/>
     </div>
 
     <div>
       <label for="meals">Quantity (# of meals)</label>
-      <select name="meals">
+      <select name="pickup[meals]">
         <option value="1">1</option>
         <option value="2">2</option>
         <option value="3">3</option>

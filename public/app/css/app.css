@@ -21,16 +21,21 @@ input:focus {
 }
 
 .section {
-  height: 500px;
+  z-index: -1;
+  height: 700px;
   display: block;
   width: 100%;
+}
+
+#section_container {
+  margin-top: 50%
 }
 
 #angular-background {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: -1;
+  z-index: -2;
   background: url(/img/Manhattanskyline.jpg) 50% 0 repeat fixed;
   width: 100%;
   height: 100%;
@@ -49,3 +54,24 @@ input:focus {
      -moz-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
           box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
 }
+
+.darkblue {
+  background-color: #3A111C;
+}
+
+.lightblue {
+  background-color: #574951;
+}
+
+.darkgreen {
+  background-color: #83988E;
+}
+
+.lightgreen {
+  background-color: #BCDEA5;
+}
+
+.greenyellow {
+  background-color: #E6F9BC;
+}
+

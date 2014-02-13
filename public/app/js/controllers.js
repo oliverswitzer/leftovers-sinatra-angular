@@ -8,6 +8,7 @@ leftoversControllers.controller('PickupListCtrl', ['$scope','$http', '$routePara
     // $routeParams.latlng = latlng;
     $http.get('http://localhost:9292/pickups').success(function(data) {
       $scope.pickups = data;
+      $scope.orderProp = 'closing_time';
   });
 }]);
 

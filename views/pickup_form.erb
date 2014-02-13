@@ -4,11 +4,14 @@
     placeholder="Enter your restaurant">
 <input type="submit" id='submit-map' class="controls"></input>
 
-
+<input type='hidden' id='poop' data-poop="YES YOU GOT THE POOP"></input>
 <div class="daform">
   <form method="POST" action="http://localhost:9393/pickups">
     <div>
       <label for="closing_time">Closing Time</label>
+
+      <input type="text" id="timePicker" autocomplete="off">
+  <!-- 
       <select name="closing_time">
         <option value="8:00 PM">8:00 PM</option>
         <option value="8:15 PM">8:15 PM</option>
@@ -29,7 +32,7 @@
         <option value="11:15 PM">11:15 PM</option>
         <option value="11:30 PM">11:30 PM</option>
         <option value="11:45 PM">11:45 PM</option>
-      </select>
+      </select> -->
     </div>
 
     <div>
@@ -55,6 +58,20 @@
 
 </div>
 
-
-
 <script type="text/javascript" src="/js/map.js"></script>
+<script type="text/javascript" src="/js/jquery.timepicker.min.js"></script>
+<script type="text/javascript">
+ 
+$(document).ready(function() {
+  var $form = $(".daform").hide();
+  var $map = $('#map-canvas');
+
+  $('#submit-map').on('click', function() {
+    $map.fadeOut('slow');
+    $form.fadeIn('slow');
+  });
+
+  $('#timePicker').timepicker();
+  
+});
+</script>

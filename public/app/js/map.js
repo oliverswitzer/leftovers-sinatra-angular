@@ -1,14 +1,5 @@
 // map.js
 
-$(document).ready(function() {
-  var $form = $(".daform").hide();
-  var $map = $('#map-canvas');
-
-  $('#submit-map').on('click', function() {
-    $map.fadeOut('slow');
-    $form.fadeIn('slow');
-  })
-});
   
 google.maps.event.addDomListener(window, 'load', initialize);
 

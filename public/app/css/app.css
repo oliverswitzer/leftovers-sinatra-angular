@@ -51,3 +51,8 @@
 #submit-map {
   cursor: pointer;
 }
+
+#new-pickup-btn{
+  float: right;
+  margin: 10px;
+}

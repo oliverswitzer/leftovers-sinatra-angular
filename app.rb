@@ -65,6 +65,13 @@ module Name
       redirect '/'
     end
 
+    # get '/:filename' do
+    #   respond_to do |f|
+    #     f.js { redirect}
+    #   end
+
+    #   redirect '/'
+    # end
 
   end
 end

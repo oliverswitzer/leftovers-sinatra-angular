@@ -56,10 +56,23 @@ module Name
       @pickups.to_json(:include => [:restaurant, :shelter])
     end
 
+    get '/pickups/new' do
+      erb :pickup_form
+    end
+
     post '/pickups' do
-      @pickup = Pickup.new(params[:pickup])
+      # debugger
+      Pickup.new_pickup(params)
       redirect '/'
     end
+
+    # get '/:filename' do
+    #   respond_to do |f|
+    #     f.js { redirect}
+    #   end
+
+    #   redirect '/'
+    # end
 
   end
 end

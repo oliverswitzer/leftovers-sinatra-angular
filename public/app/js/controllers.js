@@ -2,11 +2,13 @@
 
 var leftoversControllers = angular.module('leftoversControllers',[]);
 
-leftoversControllers.controller('PickupListCtrl', ['$scope','$http',
-	function($scope, $http){
-    $http.get('http://localhost:9393/pickups').success(function(data) {
-      debugger
+leftoversControllers.controller('PickupListCtrl', ['$scope','$http', '$routeParams',
+	function($scope, $http, $routeParams){
+		// navigator.geolocation.getCurrentPosition(function(position){ latlng = position.coords.longitude + ',' + position.coords.latitude });
+    // $routeParams.latlng = latlng;
+    $http.get('http://localhost:9292/pickups').success(function(data) {
       $scope.pickups = data;
+      $scope.orderProp = 'closing_time';
   });
 }]);
 

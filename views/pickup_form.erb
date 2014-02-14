@@ -1,0 +1,67 @@
+<div id="map-canvas"></div>
+
+<input id="pac-input" class="controls" type="text"
+    placeholder="Enter your restaurant">
+<input type="submit" id='submit-map' class="controls"></input>
+
+<div class="daform">
+  <form method="POST" action="http://localhost:9292/pickups">
+    <input type="hidden" name="restaurant_data" id="hidden"></input>
+
+
+    <div>
+      <label for="food_description">Food Description:</label>
+      <textarea id="food_description" placeholder="Describe your food here..." name="pickup[food_description]"></textarea>
+    </div>
+
+    <div>
+      <label for="meals">Quantity (# of meals)</label>
+      <select name="pickup[meals]">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="closing_time">Closing Time</label>
+      <input type="text" id="datePicker" name="pickup[closing_time][date]" class="date"/>
+      <input type="text" id="timePicker" name="pickup[closing_time][time]" autocomplete="off"/>
+    </div>
+
+    <button type="submit">Create new Pickup</button>
+  </form>
+
+</div>
+
+<script type="text/javascript" src="/js/map.js"></script>
+<script type="text/javascript" src="/js/jquery.timepicker.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap-datepicker.js"></script>
+<script type="text/javascript">
+ 
+$(document).ready(function() {
+  var $form = $(".daform").hide();
+  var $map = $('#map-canvas');
+
+  $('#submit-map').on('click', function() {
+    
+    if($("#hidden").attr("value") && $("#pac-input").val()){
+      $map.fadeOut('medium', function() {
+        $form.fadeIn('slow');
+      });
+    }else{
+      $("#pac-input").addClass("input-error");
+    }
+  });
+
+  $('#timePicker').timepicker({ 'scrollDefaultNow': true });
+  $('#datePicker').datepicker({
+        'format': 'm/d/yyyy',
+        'autoclose': true
+    });  
+});
+</script>

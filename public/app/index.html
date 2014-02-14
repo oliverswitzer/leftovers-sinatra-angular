@@ -1,6 +1,5 @@
 <!DOCTYPE html>
- <!-- add the ng-app *attribute* 
-      ng-app points to the ngApp *directive* -->
+
 <html lang="en" ng-app="leftoversApp">
   <head>
     <meta charset="utf-8"/>
@@ -12,14 +11,12 @@
     <script src="js/app.js"></script>
     <script src="js/controllers.js"></script>
     <script src="js/filters.js"></script>
-  </head>
-  <!-- set your controller here
-      this allows us to bind our model 
-      and our view
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true&libraries=places,geometry"></script>
+    <script type="text/javascript" src="/js/pickups.js"></script>
 
-      this will be defined in js/controllers.js -->
+  </head>
   <body>
     <div ng-view></div>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   </body>
 </html>

@@ -28,6 +28,25 @@
   <div class="section greenyellow"></div>
 </div>
 
+<script type="text/javascript">
+  $(document).ready(function(){
+    $("tr").on("click",function(){
+      $this = $(this);
+      $this.addClass("lightblue");
+      $("tr").not($this).removeClass("lightblue");
 
->>>>>>> 3c28e45a6c75a93b47c12d1a09c419ff5796157f
-
+      //Add button to selected row/pickup
+      $("button").remove() //remove all other buttons
+      var element = $(document.createElement("button"));
+      element.prop({
+          'href': '#',
+          'id': 'pickup-confirm-button',
+          'class': 'btn'
+      }); 
+      
+      element.text("Confirm Pickup");
+      element.appendTo($this);
+      element.click(function(){ console.log('Pickup sold!');});
+    });
+  });
+</script>

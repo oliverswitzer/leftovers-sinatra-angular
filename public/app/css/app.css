@@ -8,10 +8,16 @@
 }
 
 #new-pickup {
-  display: inline-block;
-  position: fixed;
-  top: 10px;
-  right: 10px;
+  
+}
+
+.table-button{
+  padding: 20px;
+  height: 100px;
+}
+
+select{
+  color: #428bca;
 }
 
 .input-error {
@@ -22,7 +28,6 @@
   font-size: 1.4em;
   color: grey;
   padding: 10px;
-  margin: 20px;
 }
 
 input:focus {

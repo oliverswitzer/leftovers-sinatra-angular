@@ -1,7 +1,21 @@
 <div id="big_container">
-  <h3><a href="/pickups/new" id="new-pickup">New Pickup</a></h3>
   <div class="container">
-    <input ng-model="query" id="pickup-search" placeholder="Search for a listing..."></input>
+    <div class="row">
+      <div class="col-md-4 table-button">
+        <input ng-model="query" id="pickup-search" placeholder="Search for a listing..."></input>
+      </div>
+      <div class="col-md-4 table-button">
+        <select ng-model="orderProp" id="pickup-order">
+          <option value="name">Name</option>
+          <option value="address">Address</option>
+          <option value="closing_time">Closing Time</option>
+          <option value="meals">Food Quantity</option>
+        </select>
+      </div>
+      <div class="col-md-2 col-md-offset-2 table-button">
+        <h3><a href="/pickups/new" id="new-pickup">New Pickup</a></h3>
+      </div>
+    </div>
     <table class="table">
       <tr>
         <th>Restaurant Name</th>

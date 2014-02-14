@@ -10,13 +10,15 @@
       <th>Quantity (# meals)</th>
       <th>Closing Time</th>
     </tr>
-    <tr ng-repeat="pickup in pickups | filter: query | orderBy:orderProp">
+    <tr ng-repeat="pickup in pickups | filter: query | orderBy:orderProp" data-id={{pickup.id}}>
       <td>{{pickup.restaurant.name}}</td>
       <td>{{pickup.restaurant.address}}</td>
       <td>{{pickup.food_description}}</td>
       <td>{{pickup.meals}}</td>
       <td>{{pickup.closing_time | date: 'short'}}</td>
+      <td><a href="#/pickup/{{pickup.id}}"><button hidden>Confirm Pickup</button></a></td>
     </tr>
+
   </table>
 </div>
 

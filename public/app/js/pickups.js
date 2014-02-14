@@ -19,17 +19,19 @@ $(function() {
       $("tr").not($this).removeClass("lightblue");
 
       //Add button to selected row/pickup
-      $("button").remove() //remove all other buttons
-      var element = $(document.createElement("button"));
-      element.prop({
-          'href': '#',
-          'id': 'pickup-confirm-button',
-          'class': 'btn'
-      }); 
+      $("button").hide() //hide all other buttons
       
-      element.text("Confirm Pickup");
-      element.appendTo($this);
-      element.click(function(){ console.log('Pickup sold!');});
+      //var element = $("<a href='#'><input type='button'>Confirm</button></a>");
+      // element.prop({
+      //     'href': '#/pickups/' + $this.data("id"),
+      //     'id': 'pickup-confirm-button',
+      //     'class': 'btn'
+      // }); 
+      $this.find("button").show();
+      // element.text("Confirm Pickup");
+      console.log($this.find("button"));
+      // element.appendTo($this);
+      // element.click(function(){ });
     });
 
     var $sections = $('.section'),

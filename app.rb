@@ -51,9 +51,13 @@ module Name
       #redirect?
     end
 
-    get '/pickups' do
+    get '/pickups.json' do
       @pickups = Pickup.all
       @pickups.to_json(:include => [:restaurant, :shelter])
+    end
+
+    get '/pickups' do
+      redirect '/#/pickups'
     end
 
     get '/pickups/new' do

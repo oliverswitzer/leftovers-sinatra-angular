@@ -6,7 +6,7 @@ leftoversControllers.controller('PickupListCtrl', ['$scope','$http', '$routePara
 	function($scope, $http, $routeParams){
 		// navigator.geolocation.getCurrentPosition(function(position){ latlng = position.coords.longitude + ',' + position.coords.latitude });
     // $routeParams.latlng = latlng;
-    $http.get('http://localhost:9292/pickups').success(function(data) {
+    $http.get('http://localhost:9292/pickups.json').success(function(data) {
       $scope.pickups = data;
       $scope.orderProp = 'closing_time';
   });

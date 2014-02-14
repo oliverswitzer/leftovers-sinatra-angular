@@ -12,10 +12,10 @@ $(function() {
     $bgimg.css("background-position", coords);
   }); 
 
-  // $(window).resize(function() {
-  //   var windowHeight = $(window).height();
-  //   $('#section_container').css("top", windowHeight - 0.25*windowHeight);
-  // });
+  $(window).resize(function() {
+    var tableWidth = $(".container").width();
+    $('.container').css("margin-left", -tableWidth/2);
+  });
 
   setInterval(function(){
     $("tr").on("click",function(){

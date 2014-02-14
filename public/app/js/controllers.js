@@ -12,6 +12,13 @@ leftoversControllers.controller('PickupListCtrl', ['$scope','$http', '$routePara
   });
 }]);
 
+leftoversControllers.controller('PickupDetailCtrl', ['$scope','$http', '$routeParams',
+	function($scope, $http, $routeParams){
+		$http.get('http://localhost:9292/pickups/' + $routeParams.id + '.json').success(function(data){
+			$scope.pickup = data;
+		});
+	}]
+	);
 
 
 

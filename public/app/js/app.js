@@ -17,6 +17,9 @@ leftoversApp.config(['$routeProvider', function($routeProvider){
 	$routeProvider.when("/pickups", {
 		templateUrl: "partials/pickups.html",
 		controller: "PickupListCtrl"
+	}).when("/pickups/:id",{
+			templateUrl: "partials/pickups-show.html",
+			controller: "PickupDetailCtrl"
 	}).otherwise({redirectTo: "/pickups"});
 
 }]);

@@ -1,31 +1,33 @@
 <div id="angular-background"></div>
-<h3><a href="/pickups/new" id="new-pickup">New Pickup</a></h3>
-<div class="container">
-  <input ng-model="query" id="pickup-search" placeholder="Search for a listing..."></input>
-  <table class="table">
-    <tr>
-      <th>Restaurant Name</th>
-      <th>Address</th>
-      <th>Food Description</th>
-      <th>Quantity (# meals)</th>
-      <th>Closing Time</th>
-    </tr>
-    <tr ng-repeat="pickup in pickups | filter: query | orderBy:orderProp" data-id={{pickup.id}}>
-      <td>{{pickup.restaurant.name}}</td>
-      <td>{{pickup.restaurant.address}}</td>
-      <td>{{pickup.food_description}}</td>
-      <td>{{pickup.meals}}</td>
-      <td>{{pickup.closing_time | date: 'short'}}</td>
-      <td><a href="#/pickups/{{pickup.id}}"><button hidden>Confirm Pickup</button></a></td>
-    </tr>
+<div id="big_container">
+  <h3><a href="/pickups/new" id="new-pickup">New Pickup</a></h3>
+  <div class="container">
+    <input ng-model="query" id="pickup-search" placeholder="Search for a listing..."></input>
+    <table class="table">
+      <tr>
+        <th>Restaurant Name</th>
+        <th>Address</th>
+        <th>Food Description</th>
+        <th>Quantity (# meals)</th>
+        <th>Closing Time</th>
+      </tr>
+      <tr ng-repeat="pickup in pickups | filter: query | orderBy:orderProp" data-id={{pickup.id}}>
+        <td>{{pickup.restaurant.name}}</td>
+        <td>{{pickup.restaurant.address}}</td>
+        <td>{{pickup.food_description}}</td>
+        <td>{{pickup.meals}}</td>
+        <td>{{pickup.closing_time | date: 'short'}}</td>
+        <td><a href="#/pickups/{{pickup.id}}"><button hidden>Confirm Pickup</button></a></td>
+      </tr>
 
-  </table>
-</div>
+    </table>
+  </div>
 
-<div id="section_container">
-  <div class="section darkblue"></div>
-  <div class="section lightblue"></div>
-  <div class="section darkgreen"></div>
-  <div class="section lightgreen"></div>
-  <div class="section greenyellow"></div>
+  <div id="section_container">
+    <div class="section darkblue"></div>
+    <div class="section lightblue"></div>
+    <div class="section darkgreen"></div>
+    <div class="section lightgreen"></div>
+    <div class="section greenyellow"></div>
+  </div>
 </div>

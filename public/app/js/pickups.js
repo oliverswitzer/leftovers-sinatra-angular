@@ -12,6 +12,11 @@ $(function() {
     $bgimg.css("background-position", coords);
   }); 
 
+  // $(window).resize(function() {
+  //   var windowHeight = $(window).height();
+  //   $('#section_container').css("top", windowHeight - 0.25*windowHeight);
+  // });
+
   setInterval(function(){
     $("tr").on("click",function(){
       $this = $(this);
@@ -29,7 +34,6 @@ $(function() {
       // }); 
       $this.find("button").show();
       // element.text("Confirm Pickup");
-      console.log($this.find("button"));
       // element.appendTo($this);
       // element.click(function(){ });
     });
@@ -39,10 +43,9 @@ $(function() {
       $sectionContainer = $('#section_container'),
       windowHeight = $(window).height();
 
-    console.log(windowHeight);
-    $sectionContainer.css("margin-top", windowHeight)
+    $sectionContainer.css("top", windowHeight)
 
-    $.each([$sections, $bgimg], function() {
+    $.each([$bgimg], function() {
       $(this).css("height", windowHeight);
     })
   }, 100

@@ -12,7 +12,7 @@ $(function() {
     $bgimg.css("background-position", coords);
   }); 
 
-  setTimeout(function(){
+  setInterval(function(){
     $("tr").on("click",function(){
       $this = $(this);
       $this.addClass("lightblue");
@@ -45,7 +45,7 @@ $(function() {
     $.each([$sections, $bgimg], function() {
       $(this).css("height", windowHeight);
     })
-  }, 2000
+  }, 100
   );
   
 })

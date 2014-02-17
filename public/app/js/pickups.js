@@ -5,7 +5,13 @@ var ws       = new WebSocket(uri);
 
 ws.onopen    = function()  { console.log('websocket opened'); };
 ws.onclose   = function()  { console.log('websocket closed'); };
-ws.onmessage = function(m) { console.log('websocket message: ' +  JSON.parse(m.data)); };
+ws.onmessage = function(m) { debugger;console.log('websocket message: ' +  JSON.parse(m.data)); };
+// var rest_name_addy = JSON.parse(JSON.parse(m.data)[0].value)
+// var food_desp = JSON.parse(m.data)[1].value
+// var meals = JSON.parse(m.data)[2].value
+// var closing_date = JSON.parse(m.data)[3].value
+// var closing_time = JSON.parse(m.data)[4].value
+
 
 // custom_parallax.js
 

@@ -68,7 +68,6 @@ $(document).ready(function() {
   $('#datePicker').datepicker("setDate", new Date());
   
   $(".daform").on("submit", function(event) {
-      // debugger;
       ws.send(JSON.stringify($('form').serializeArray()));
     });
 

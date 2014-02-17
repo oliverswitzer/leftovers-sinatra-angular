@@ -64,6 +64,8 @@ $(document).ready(function() {
         'format': 'm/d/yyyy',
         'autoclose': true
     });
+
+  $('#datePicker').datepicker("setDate", new Date());
   
   $(".daform").on("submit", function(event) {
       // debugger;

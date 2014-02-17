@@ -5,8 +5,7 @@ var ws       = new WebSocket(uri);
 
 ws.onopen    = function()  { console.log('websocket opened'); };
 ws.onclose   = function()  { console.log('websocket closed'); };
-ws.onmessage = function(m) { console.log('websocket message: ' +  m); };
-
+ws.onmessage = function(m) { console.log('websocket message: ' +  JSON.parse(m.data)); };
 
 // custom_parallax.js
 

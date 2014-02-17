@@ -64,17 +64,10 @@ $(document).ready(function() {
         'format': 'm/d/yyyy',
         'autoclose': true
     });
-
-  // var scheme   = "ws://";
-  // var uri      = scheme + window.document.location.host + "/";
-  // var ws       = new WebSocket(uri);
-
-  // ws.onopen    = function()  { console.log('websocket opened'); };
-  // ws.onclose   = function()  { console.log('websocket closed'); };
-  // ws.onmessage = function(m) { console.log('websocket message: ' +  JSON.parse(m.data)); };
   
   $(".daform").on("submit", function(event) {
-      ws.send(JSON.stringify({ handle: "handizzled", text: "textizzle" }));
+      // debugger;
+      ws.send(JSON.stringify($('form').serializeArray()));
     });
 
 });

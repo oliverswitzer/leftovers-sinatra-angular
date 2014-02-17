@@ -9,6 +9,7 @@ Dir["./lib/*.rb"].each {|file| require file }
 set :server, 'thin'
 set :sockets, []
 
+# Run with rackup -E production
 module Name
   class App < Sinatra::Application
 

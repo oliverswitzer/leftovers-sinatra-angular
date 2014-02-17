@@ -27,9 +27,15 @@ GEM
       debugger-ruby_core_source (~> 1.2.4)
     debugger-linecache (1.2.0)
     debugger-ruby_core_source (1.2.4)
+    eventmachine (1.0.3)
+    faye-websocket (0.7.2)
+      eventmachine (>= 0.12.0)
+      websocket-driver (>= 0.3.1)
     i18n (0.6.9)
     minitest (4.7.5)
     multi_json (1.8.4)
+    puma (2.6.0)
+      rack (>= 1.1, < 2.0)
     rack (1.5.2)
     rack-protection (1.5.2)
       rack
@@ -63,6 +69,7 @@ GEM
       ripl-rack (>= 0.2.0)
       sinatra (>= 1.2.1)
     tzinfo (0.3.38)
+    websocket-driver (0.3.2)
 
 PLATFORMS
   ruby
@@ -70,6 +77,8 @@ PLATFORMS
 DEPENDENCIES
   activerecord
   debugger
+  faye-websocket
+  puma
   rake
   shotgun
   sinatra

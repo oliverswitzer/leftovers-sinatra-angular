@@ -6,6 +6,9 @@ require 'debugger'
 
 Dir["./lib/*.rb"].each {|file| require file }
 
+set :server, 'thin'
+set :sockets, []
+
 module Name
   class App < Sinatra::Application
 
@@ -72,7 +75,7 @@ module Name
     post '/pickups' do
       # debugger
       Pickup.new_pickup(params)
-      redirect '/'
+      redirect '/'     
     end
 
     put '/pickups/:id' do

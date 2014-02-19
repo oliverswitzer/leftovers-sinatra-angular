@@ -41,6 +41,7 @@
 <script type="text/javascript" src="/js/map.js"></script>
 <script type="text/javascript" src="/js/jquery.timepicker.min.js"></script>
 <script type="text/javascript" src="/js/bootstrap-datepicker.js"></script>
+<script type="text/javascript" src="/js/pickups.js"></script>
 <script type="text/javascript">
  
 $(document).ready(function() {
@@ -62,6 +63,13 @@ $(document).ready(function() {
   $('#datePicker').datepicker({
         'format': 'm/d/yyyy',
         'autoclose': true
-    });  
+    });
+
+  $('#datePicker').datepicker("setDate", new Date());
+  
+  $(".daform").on("submit", function(event) {
+      ws.send(JSON.stringify($('form').serializeArray()));
+    });
+
 });
 </script>

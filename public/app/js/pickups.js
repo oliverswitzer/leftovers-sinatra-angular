@@ -1,8 +1,6 @@
 // custom_parallax.js
 
 $(function() {
-  
-
 
   //custom parallax
   $(window).scroll(function() {   //for parallax effect on hero

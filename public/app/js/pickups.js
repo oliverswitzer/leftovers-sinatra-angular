@@ -16,11 +16,6 @@ ws.onmessage = function(m) { debugger;console.log('websocket message: ' +  JSON.
 // custom_parallax.js
 
 $(function() {
-<<<<<<< HEAD
-
-=======
-  
->>>>>>> abee0f900baa761dc6fcc886bfdcbee58a79a212
   //custom parallax
   $(window).scroll(function() {   //for parallax effect on hero
     var $bgimg = $('#angular-background');

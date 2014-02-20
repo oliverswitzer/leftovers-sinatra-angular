@@ -9,6 +9,8 @@ Dir["./lib/*.rb"].each {|file| require file }
 set :server, 'thin'
 set :sockets, []
 
+
+
 # Run with rackup -E production
 module Name
   class App < Sinatra::Application
@@ -52,7 +54,6 @@ module Name
 
     post '/shelters' do
       @shelters = Shelter.new(params[:shelter])
-      #redirect?
     end
 
     get '/pickups.json' do
@@ -74,7 +75,6 @@ module Name
     end
 
     post '/pickups' do
-      # debugger
       Pickup.new_pickup(params)
       redirect '/'     
     end

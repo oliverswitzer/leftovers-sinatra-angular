@@ -1,17 +1,7 @@
 // custom_parallax.js
 
 $(function() {
-  var $sections = $('.section'),
-      $bgimg = $('#angular-background'),
-      $sectionContainer = $('#section_container'),
-      windowHeight = $(window).height();
-
-  console.log(windowHeight);
-  $sectionContainer.css("margin-top", windowHeight)
-
-  $.each([$sections, $bgimg], function() {
-    $(this).css("height", windowHeight);
-  })
+  
 
 
   //custom parallax
@@ -21,4 +11,46 @@ $(function() {
     var coords = '50% ' + yPos + 'px';
     $bgimg.css("background-position", coords);
   }); 
+
+  $(window).resize(function() {
+    var tableWidth = $(".container").width();
+    $('.container').css("margin-left", -tableWidth/2);
+  });
+
+  setInterval(function(){
+    $("tr").on("click",function(){
+      $this = $(this);
+      $this.addClass("lightblue");
+      $("tr").not($this).removeClass("lightblue");
+
+      //Add button to selected row/pickup
+      $("button").hide() //hide all other buttons
+      
+      //var element = $("<a href='#'><input type='button'>Confirm</button></a>");
+      // element.prop({
+      //     'href': '#/pickups/' + $this.data("id"),
+      //     'id': 'pickup-confirm-button',
+      //     'class': 'btn'
+      // }); 
+      $this.find("button").show();
+      // element.text("Confirm Pickup");
+      // element.appendTo($this);
+      // element.click(function(){ });
+    });
+
+    var $sections = $('.section'),
+      $bgimg = $('#angular-background'),
+      $sectionContainer = $('#section_container'),
+      windowHeight = $(window).height();
+
+    $sectionContainer.css("top", windowHeight)
+
+    $.each([$bgimg], function() {
+      $(this).css("height", windowHeight);
+    })
+  }, 100
+  );
+  
 })
+
+

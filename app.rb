@@ -51,9 +51,18 @@ module Name
       #redirect?
     end
 
-    get '/pickups' do
+    get '/pickups.json' do
       @pickups = Pickup.all
       @pickups.to_json(:include => [:restaurant, :shelter])
+    end
+
+    get '/pickups/:id' + '.json' do
+        @pickup = Pickup.find(params[:id])
+        @pickup.to_json(:include => [:restaurant, :shelter])
+    end
+
+    get '/pickups' do
+      redirect '/#/pickups'
     end
 
     get '/pickups/new' do
@@ -64,6 +73,10 @@ module Name
       # debugger
       Pickup.new_pickup(params)
       redirect '/'
+    end
+
+    put '/pickups/:id' do
+
     end
 
     # get '/:filename' do

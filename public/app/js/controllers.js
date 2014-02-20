@@ -15,7 +15,8 @@ leftoversControllers.controller('PickupListCtrl', ['$scope','$http', '$routePara
     };
     
     // Run function every second
-    setInterval($scope.getPickups, 1000);
+    // setInterval($scope.getPickups, 1000);
+    $scope.getPickups();
 }]);
 
 leftoversControllers.controller('PickupDetailCtrl', ['$scope','$http', '$routeParams',

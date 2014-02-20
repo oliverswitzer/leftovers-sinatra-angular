@@ -60,12 +60,7 @@ $(function() {
     $.each([$bgimg], function() {
       $(this).css("height", windowHeight);
     })
-  },100);
-    
-
-
-
-  
+  },100);  
 })
 
 

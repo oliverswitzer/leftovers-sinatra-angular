@@ -58,11 +58,6 @@ leftoversControllers.controller('PickupDetailCtrl', ['$scope','$http', '$routePa
 
 
 
-
-
-
-
-
 // var spacecatControllers = angular.module('spacecatControllers', []);
 
 // spacecatApp.controller('CatListCtrl', ['$scope', '$http',

@@ -20,6 +20,12 @@ leftoversControllers.controller('PickupDetailCtrl', ['$scope','$http', '$routePa
 	}]
 	);
 
+// app.controller('MainCtrl', function($scope, Poller) {
+//   $scope.name = 'World';
+//   $scope.data = Poller.data;
+// });
+// app.controller('StartCtrl',function(){});
+// app.run(function(Poller) {});
 
 
 

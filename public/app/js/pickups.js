@@ -32,8 +32,8 @@ $(function() {
     $('.container').css("margin-left", -tableWidth/2);
   });
 
-  setInterval(function(){
-    $("tr").on("click",function(){
+    $(window).load(function(){
+      $(".table").on("click", "tr", function(){
       $this = $(this);
       $this.addClass("lightblue");
       $("tr").not($this).removeClass("lightblue");
@@ -52,6 +52,8 @@ $(function() {
       // element.appendTo($this);
       // element.click(function(){ });
     });
+   
+    
 
     var $sections = $('.section'),
       $bgimg = $('#angular-background'),
@@ -63,12 +65,8 @@ $(function() {
     $.each([$bgimg], function() {
       $(this).css("height", windowHeight);
     })
-  },100);
-    
+  });
 
-
-
-  
 })
 
 

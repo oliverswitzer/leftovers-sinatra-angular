@@ -7,7 +7,7 @@ leftoversControllers.controller('PickupListCtrl', ['$scope','$http', '$routePara
 		// navigator.geolocation.getCurrentPosition(function(position){ latlng = position.coords.longitude + ',' + position.coords.latitude });
     // $routeParams.latlng = latlng;
     $scope.getPickups = function(){
-      $http.get('http://localhost:9292/pickups.json').success(function(data, status, headers, config) {
+      $http.get('rescuisine.herokuapp.com/pickups.json').success(function(data, status, headers, config) {
           $scope.pickups = data
           console.log('Fetched data!');
         });
@@ -19,7 +19,7 @@ leftoversControllers.controller('PickupListCtrl', ['$scope','$http', '$routePara
 
 leftoversControllers.controller('PickupDetailCtrl', ['$scope','$http', '$routeParams',
 	function($scope, $http, $routeParams){
-		$http.get('http://localhost:9292/pickups/' + $routeParams.id + '.json').success(function(data){
+		$http.get('rescuisine.herokuapp.com/pickups/' + $routeParams.id + '.json').success(function(data){
 			$scope.pickup = data;
 		});
 }]);

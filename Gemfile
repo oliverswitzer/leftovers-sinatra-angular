@@ -6,7 +6,6 @@ gem "sinatra-activerecord"
 gem "rake"
 gem 'resque', "~> 1.22.0"
 gem "puma"
-
 gem "faye-websocket"
 
 group :development do

@@ -5,7 +5,6 @@ gem "activerecord"
 gem "sinatra-activerecord"
 gem "rake"
 gem 'resque', "~> 1.22.0"
-gem "sqlite3"
 gem "puma"
 
 gem "faye-websocket"

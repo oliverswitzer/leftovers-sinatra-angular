@@ -20,7 +20,14 @@ module Name
       set :public_folder, 'public/app'
     end
 
-    set :database, "sqlite3:///database.db"
+    configure :development do
+
+    end
+
+    configure :production do
+      set :database, "sqlite3:///database.db"
+    end
+
 
     get '/' do
       File.read(File.join('public/app', 'index.html'))

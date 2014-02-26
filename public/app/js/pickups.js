@@ -69,7 +69,7 @@ $(function() {
         $(this).css("height", windowHeight);
       })
 
-      }, 1);
+      }, 10);
   });
 })
 

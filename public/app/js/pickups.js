@@ -18,11 +18,6 @@ ws.onmessage = function(m) { angular.element($('#all-pickups')).scope().getPicku
 // custom_parallax.js
 
 $(function() {
-<<<<<<< HEAD
-
-=======
-  
->>>>>>> abee0f900baa761dc6fcc886bfdcbee58a79a212
   //custom parallax
   $(window).scroll(function() {   //for parallax effect on hero
     var $bgimg = $('#angular-background');
@@ -38,37 +33,39 @@ $(function() {
 
     $(window).load(function(){
       $(".table").on("click", "tr", function(){
-      $this = $(this);
-      $this.addClass("lightblue");
-      $("tr").not($this).removeClass("lightblue");
+        $this = $(this);
+        $this.addClass("lightblue");
+        $("tr").not($this).removeClass("lightblue");
 
-      //Add button to selected row/pickup
-      $(".confirm-pickup-btn").hide() //hide all other buttons
-      
-      //var element = $("<a href='#'><input type='button'>Confirm</button></a>");
-      // element.prop({
-      //     'href': '#/pickups/' + $this.data("id"),
-      //     'id': 'pickup-confirm-button',
-      //     'class': 'btn'
-      // }); 
-      $this.find("button").show();
-      // element.text("Confirm Pickup");
-      // element.appendTo($this);
-      // element.click(function(){ });
-    });
+        //Add button to selected row/pickup
+        $(".confirm-pickup-btn").hide() //hide all other buttons
+        
+        //var element = $("<a href='#'><input type='button'>Confirm</button></a>");
+        // element.prop({
+        //     'href': '#/pickups/' + $this.data("id"),
+        //     'id': 'pickup-confirm-button',
+        //     'class': 'btn'
+        // }); 
+        $this.find("button").show();
+        // element.text("Confirm Pickup");
+        // element.appendTo($this);
+        // element.click(function(){ });
+      });
    
     
+      setTimeout(function(){
+        var $sections = $('.section'),
+        $bgimg = $('#angular-background'),
+        $sectionContainer = $('#section_container'),
+        windowHeight = $(window).height();
 
-    var $sections = $('.section'),
-      $bgimg = $('#angular-background'),
-      $sectionContainer = $('#section_container'),
-      windowHeight = $(window).height();
+        $sectionContainer.css("top", windowHeight)
 
-    $sectionContainer.css("top", windowHeight)
-
-    $.each([$bgimg], function() {
-      $(this).css("height", windowHeight);
-    })
+        $.each([$bgimg], function() {
+        $(this).css("height", windowHeight);
+        })
+      }, 0.1);
+      
   });
 
 })

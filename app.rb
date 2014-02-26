@@ -1,6 +1,6 @@
 require 'bundler'
 Bundler.require
-
+require './environments'
 require 'sinatra/activerecord'
 require 'debugger'
 
@@ -19,15 +19,6 @@ module Name
       set :root, File.dirname(__FILE__)
       set :public_folder, 'public/app'
     end
-
-    configure :development do
-
-    end
-
-    configure :production do
-      set :database, "sqlite3:///database.db"
-    end
-
 
     get '/' do
       File.read(File.join('public/app', 'index.html'))

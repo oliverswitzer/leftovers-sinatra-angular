@@ -5,7 +5,9 @@ var ws       = new WebSocket(uri);
 
 ws.onopen    = function()  { console.log('websocket opened'); };
 ws.onclose   = function()  { console.log('websocket closed'); };
-ws.onmessage = function(m) { debugger;console.log('websocket message: ' +  JSON.parse(m.data)); };
+ws.onmessage = function(m) { angular.element($('#all-pickups')).scope().getPickups(); };
+// angular.element($('#all-pickups')).scope().getPickups();
+// angular.element($('#all-pickups')).scope().getPickups();
 // var rest_name_addy = JSON.parse(JSON.parse(m.data)[0].value)
 // var food_desp = JSON.parse(m.data)[1].value
 // var meals = JSON.parse(m.data)[2].value
@@ -29,8 +31,8 @@ $(function() {
     $('.container').css("margin-left", -tableWidth/2);
   });
 
-  setInterval(function(){
-    $("tr").on("click",function(){
+  $(window).load(function(){
+    $(".table").on("click", "tr", function(){
       $this = $(this);
       $this.addClass("lightblue");
       $("tr").not($this).removeClass("lightblue");
@@ -49,6 +51,8 @@ $(function() {
       // element.appendTo($this);
       // element.click(function(){ });
     });
+ 
+  
 
     var $sections = $('.section'),
       $bgimg = $('#angular-background'),
@@ -60,7 +64,7 @@ $(function() {
     $.each([$bgimg], function() {
       $(this).css("height", windowHeight);
     })
-  },100);  
+  });
 })
 
 

@@ -1,5 +1,5 @@
 
-configure do 
+configure :development do 
   set :database, "sqlite3:///database.db"
 end
 

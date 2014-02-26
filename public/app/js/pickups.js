@@ -28,10 +28,12 @@ $(function() {
 
   $(window).resize(function() {
     var tableWidth = $(".container").width();
-    $('.container').css("margin-left", -tableWidth/2);
+    $('.container').css("margin-left", -tableWidth/1.92);
   });
 
   $(window).load(function(){
+    
+
     $(".table").on("click", "tr", function(){
       $this = $(this);
       $this.addClass("lightblue");
@@ -53,17 +55,23 @@ $(function() {
     });
  
   
+    setTimeout(function() {
 
-    var $sections = $('.section'),
+      var tableWidth = $(".container").width();
+      $('.container').css("margin-left", -tableWidth/1.92);
+      
+      var $sections = $('.section'),
       $bgimg = $('#angular-background'),
       $sectionContainer = $('#section_container'),
       windowHeight = $(window).height();
 
-    $sectionContainer.css("top", windowHeight)
+      $sectionContainer.css("top", windowHeight)
 
-    $.each([$bgimg], function() {
-      $(this).css("height", windowHeight);
-    })
+      $.each([$bgimg], function() {
+        $(this).css("height", windowHeight);
+      })
+
+      }, 1);
   });
 })
 

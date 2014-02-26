@@ -37,7 +37,7 @@ $(function() {
       $this.addClass("lightblue");
       $("tr").not($this).removeClass("lightblue");
 
-      //Add button to selected row/pickup
+      //Add sbutton to selected row/pickup
       $(".confirm-pickup-btn").hide() //hide all other buttons
       
       //var element = $("<a href='#'><input type='button'>Confirm</button></a>");

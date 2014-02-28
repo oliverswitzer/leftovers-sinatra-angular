@@ -1876,3 +1876,29 @@
 [67487] 28 Feb 12:21:59 - 0 clients connected (0 slaves), 923104 bytes in use
 [67487] 28 Feb 12:22:04 - DB 0: 5 keys (2 volatile) in 16 slots HT.
 [67487] 28 Feb 12:22:04 - 0 clients connected (0 slaves), 923104 bytes in use
+[67487] 28 Feb 12:22:09 - DB 0: 5 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:22:09 - 0 clients connected (0 slaves), 923104 bytes in use
+[67487] 28 Feb 12:22:14 - DB 0: 5 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:22:14 - 0 clients connected (0 slaves), 923104 bytes in use
+[67487] 28 Feb 12:22:19 - DB 0: 5 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:22:19 - 0 clients connected (0 slaves), 923104 bytes in use
+[67487] 28 Feb 12:22:25 - DB 0: 5 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:22:25 - 0 clients connected (0 slaves), 923104 bytes in use
+[67487] 28 Feb 12:22:30 - DB 0: 5 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:22:30 - 0 clients connected (0 slaves), 923104 bytes in use
+[67487] 28 Feb 12:22:35 - DB 0: 5 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:22:35 - 0 clients connected (0 slaves), 923104 bytes in use
+[67487] 28 Feb 12:22:40 - DB 0: 5 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:22:40 - 0 clients connected (0 slaves), 923104 bytes in use
+[67487] 28 Feb 12:22:45 - DB 0: 5 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:22:45 - 0 clients connected (0 slaves), 923104 bytes in use
+[67487] 28 Feb 12:22:50 - DB 0: 5 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:22:50 - 0 clients connected (0 slaves), 923104 bytes in use
+[67487] 28 Feb 12:22:55 - DB 0: 5 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:22:55 - 0 clients connected (0 slaves), 923104 bytes in use
+[67487] 28 Feb 12:22:57 # Received SIGTERM, scheduling shutdown...
+[67487] 28 Feb 12:22:57 # User requested shutdown...
+[67487] 28 Feb 12:22:57 * Saving the final RDB snapshot before exiting.
+[67487] 28 Feb 12:22:57 * DB saved on disk
+[67487] 28 Feb 12:22:57 * Removing the pid file.
+[67487] 28 Feb 12:22:57 # Redis is now ready to exit, bye bye...

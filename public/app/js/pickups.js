@@ -17,12 +17,12 @@ ws.onmessage = function(m) {angular.element($("#all-pickups")).scope().getPickup
 
 $(function() {
   //custom parallax
-  $(window).scroll(function() {   //for parallax effect on hero
-    var $bgimg = $('#angular-background');
-    var yPos = -($(this).scrollTop() / 5);
-    var coords = '50% ' + yPos + 'px';
-    $bgimg.css("background-position", coords);
-  }); 
+  // $(window).scroll(function() {   //for parallax effect on hero
+  //   var $bgimg = $('#angular-background');
+  //   var yPos = -($(this).scrollTop() / 5);
+  //   var coords = '50% ' + yPos + 'px';
+  //   $bgimg.css("background-position", coords);
+  // }); 
 
   $(window).resize(function() {
     var tableWidth = $(".container").width();

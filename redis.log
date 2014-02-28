@@ -1,0 +1,68 @@
+[67487] 28 Feb 11:05:50 * Server started, Redis version 2.2.14
+[67487] 28 Feb 11:05:50 * The server is now ready to accept connections on port 6379
+[67487] 28 Feb 11:05:50 - Accepted 127.0.0.1:61504
+[67487] 28 Feb 11:05:50 - 1 clients connected (0 slaves), 930848 bytes in use
+[67487] 28 Feb 11:05:50 - Client closed connection
+[67487] 28 Feb 11:05:50 - Accepted 127.0.0.1:61506
+[67487] 28 Feb 11:05:50 - Client closed connection
+[67487] 28 Feb 11:05:55 - 0 clients connected (0 slaves), 922320 bytes in use
+[67487] 28 Feb 11:05:59 - Accepted 127.0.0.1:61508
+[67487] 28 Feb 11:06:00 - 1 clients connected (0 slaves), 931168 bytes in use
+[67487] 28 Feb 11:06:05 - 1 clients connected (0 slaves), 931168 bytes in use
+[67487] 28 Feb 11:06:10 - 1 clients connected (0 slaves), 931168 bytes in use
+[67487] 28 Feb 11:06:12 - Accepted 127.0.0.1:61510
+[67487] 28 Feb 11:06:15 - 2 clients connected (0 slaves), 939952 bytes in use
+[67487] 28 Feb 11:06:20 - 2 clients connected (0 slaves), 939952 bytes in use
+[67487] 28 Feb 11:06:25 - 2 clients connected (0 slaves), 939952 bytes in use
+[67487] 28 Feb 11:06:30 - 2 clients connected (0 slaves), 939952 bytes in use
+[67487] 28 Feb 11:06:35 - 2 clients connected (0 slaves), 939952 bytes in use
+[67487] 28 Feb 11:06:38 - Accepted 127.0.0.1:61548
+[67487] 28 Feb 11:06:40 - DB 0: 3 keys (1 volatile) in 4 slots HT.
+[67487] 28 Feb 11:06:40 - 3 clients connected (0 slaves), 949696 bytes in use
+[67487] 28 Feb 11:06:45 - DB 0: 3 keys (1 volatile) in 4 slots HT.
+[67487] 28 Feb 11:06:45 - 3 clients connected (0 slaves), 949728 bytes in use
+[67487] 28 Feb 11:06:50 - DB 0: 3 keys (1 volatile) in 4 slots HT.
+[67487] 28 Feb 11:06:50 - 3 clients connected (0 slaves), 949728 bytes in use
+[67487] 28 Feb 11:06:55 - DB 0: 3 keys (1 volatile) in 4 slots HT.
+[67487] 28 Feb 11:06:55 - 3 clients connected (0 slaves), 949728 bytes in use
+[67487] 28 Feb 11:07:00 - DB 0: 3 keys (1 volatile) in 4 slots HT.
+[67487] 28 Feb 11:07:00 - 3 clients connected (0 slaves), 949728 bytes in use
+[67487] 28 Feb 11:07:05 - DB 0: 3 keys (1 volatile) in 4 slots HT.
+[67487] 28 Feb 11:07:05 - 3 clients connected (0 slaves), 949728 bytes in use
+[67487] 28 Feb 11:07:11 - DB 0: 3 keys (1 volatile) in 4 slots HT.
+[67487] 28 Feb 11:07:11 - 3 clients connected (0 slaves), 949728 bytes in use
+[67487] 28 Feb 11:07:16 - DB 0: 3 keys (1 volatile) in 4 slots HT.
+[67487] 28 Feb 11:07:16 - 3 clients connected (0 slaves), 949728 bytes in use
+[67487] 28 Feb 11:07:21 - DB 0: 3 keys (1 volatile) in 4 slots HT.
+[67487] 28 Feb 11:07:21 - 3 clients connected (0 slaves), 949728 bytes in use
+[67487] 28 Feb 11:07:26 - DB 0: 3 keys (1 volatile) in 4 slots HT.
+[67487] 28 Feb 11:07:26 - 3 clients connected (0 slaves), 949728 bytes in use
+[67487] 28 Feb 11:07:26 - Client closed connection
+[67487] 28 Feb 11:07:31 - DB 0: 3 keys (1 volatile) in 4 slots HT.
+[67487] 28 Feb 11:07:31 - 2 clients connected (0 slaves), 940800 bytes in use
+[67487] 28 Feb 11:07:36 - DB 0: 3 keys (1 volatile) in 4 slots HT.
+[67487] 28 Feb 11:07:36 - 2 clients connected (0 slaves), 940800 bytes in use
+[67487] 28 Feb 11:07:41 - DB 0: 3 keys (1 volatile) in 4 slots HT.
+[67487] 28 Feb 11:07:41 - 2 clients connected (0 slaves), 940800 bytes in use
+[67487] 28 Feb 11:07:46 - DB 0: 3 keys (1 volatile) in 4 slots HT.
+[67487] 28 Feb 11:07:46 - 2 clients connected (0 slaves), 940800 bytes in use
+[67487] 28 Feb 11:07:51 - DB 0: 3 keys (1 volatile) in 4 slots HT.
+[67487] 28 Feb 11:07:51 - 2 clients connected (0 slaves), 940800 bytes in use
+[67487] 28 Feb 11:07:56 - DB 0: 3 keys (1 volatile) in 4 slots HT.
+[67487] 28 Feb 11:07:56 - 2 clients connected (0 slaves), 940800 bytes in use
+[67487] 28 Feb 11:08:01 - DB 0: 3 keys (1 volatile) in 4 slots HT.
+[67487] 28 Feb 11:08:01 - 2 clients connected (0 slaves), 940800 bytes in use
+[67487] 28 Feb 11:08:06 - DB 0: 3 keys (1 volatile) in 4 slots HT.
+[67487] 28 Feb 11:08:06 - 2 clients connected (0 slaves), 940800 bytes in use
+[67487] 28 Feb 11:08:11 - DB 0: 3 keys (1 volatile) in 4 slots HT.
+[67487] 28 Feb 11:08:11 - 2 clients connected (0 slaves), 940800 bytes in use
+[67487] 28 Feb 11:08:16 - DB 0: 3 keys (1 volatile) in 4 slots HT.
+[67487] 28 Feb 11:08:16 - 2 clients connected (0 slaves), 940800 bytes in use
+[67487] 28 Feb 11:08:21 - DB 0: 3 keys (1 volatile) in 4 slots HT.
+[67487] 28 Feb 11:08:21 - 2 clients connected (0 slaves), 940800 bytes in use
+[67487] 28 Feb 11:08:26 - DB 0: 3 keys (1 volatile) in 4 slots HT.
+[67487] 28 Feb 11:08:26 - 2 clients connected (0 slaves), 940800 bytes in use
+[67487] 28 Feb 11:08:31 - DB 0: 3 keys (1 volatile) in 4 slots HT.
+[67487] 28 Feb 11:08:31 - 2 clients connected (0 slaves), 940800 bytes in use
+[67487] 28 Feb 11:08:36 - DB 0: 3 keys (1 volatile) in 4 slots HT.
+[67487] 28 Feb 11:08:36 - 2 clients connected (0 slaves), 940800 bytes in use

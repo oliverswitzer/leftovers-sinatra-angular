@@ -1,16 +1,18 @@
 <div class="container">
   <div class="row">
-    <div class="col-md-12">
+    <div class="col-md-12 center-inner">
+      <h1>Pickup confirmation page for {{pickup.restaurant.name}}</h1>
       <img src="http://maps.googleapis.com/maps/api/staticmap?size=600x300&maptype=roadmap
       &markers=color:blue|{{pickup.restaurant.latitude}},{{pickup.restaurant.longitude}}&sensor=false">
     </div>
   </div>
-  <div class="row">
-    <div class="col-md-6">
+  <div class="row pickup-details">
+    <div class="col-md-6 details restaurant">
       <h3>Closing time: {{pickup.closing_time | date: 'short'}}</h3>
       <h3>Restaurant: {{pickup.restaurant.name}}</h3>
     </div>
-    <div class="col-md-6">
+ 
+    <div class="col-md-6 details food">
       <h3>Food description: {{pickup.food_description}}</h3>
       <h3>Food quantity: {{pickup.meals}}</h3>
     </div>

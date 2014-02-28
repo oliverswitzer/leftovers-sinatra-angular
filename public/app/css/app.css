@@ -19,6 +19,27 @@
   
 }
 
+.center-inner {
+  text-align: center;
+}
+
+.pickup-details {
+  margin-top: 50px;
+}
+
+.details {
+  margin: 20px 0 20px 0;
+  padding-left: 100px;
+}
+.food {
+  background-color: #83988E;
+}
+
+.restaurant {
+  background-color: #3A111C; 
+
+}
+
 .table-button{
   padding: 20px;
   height: 100px;
@@ -37,6 +58,9 @@ select{
   color: grey;
   padding: 10px;
 }
+
+ 
+
 
 input:focus {
 }

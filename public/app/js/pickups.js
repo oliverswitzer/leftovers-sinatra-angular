@@ -5,7 +5,8 @@ var ws       = new WebSocket(uri);
 
 ws.onopen    = function()  { console.log('websocket opened'); };
 ws.onclose   = function()  { console.log('websocket closed'); };
-ws.onmessage = function(m) {angular.element($("#all-pickups")).scope().getPickups(); }; //fetch the data!
+ws.onmessage = function(m) { angular.element($('#all-pickups')).scope().getPickups(); };
+// angular.element($('#all-pickups')).scope().getPickups();
 // var rest_name_addy = JSON.parse(JSON.parse(m.data)[0].value)
 // var food_desp = JSON.parse(m.data)[1].value
 // var meals = JSON.parse(m.data)[2].value
@@ -17,12 +18,12 @@ ws.onmessage = function(m) {angular.element($("#all-pickups")).scope().getPickup
 
 $(function() {
   //custom parallax
-  $(window).scroll(function() {   //for parallax effect on hero
-    var $bgimg = $('#angular-background');
-    var yPos = -($(this).scrollTop() / 5);
-    var coords = '50% ' + yPos + 'px';
-    $bgimg.css("background-position", coords);
-  }); 
+  // $(window).scroll(function() {   //for parallax effect on hero
+  //   var $bgimg = $('#angular-background');
+  //   var yPos = -($(this).scrollTop() / 5);
+  //   var coords = '50% ' + yPos + 'px';
+  //   $bgimg.css("background-position", coords);
+  // }); 
 
   $(window).resize(function() {
     var tableWidth = $(".container").width();

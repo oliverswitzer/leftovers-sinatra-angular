@@ -24,6 +24,7 @@ GEM
       timers (~> 1.1.0)
     columnize (0.3.6)
     connection_pool (1.2.0)
+    daemons (1.1.9)
     debugger (1.6.5)
       columnize (>= 0.3.1)
       debugger-linecache (~> 1.2.0)
@@ -34,11 +35,23 @@ GEM
     faye-websocket (0.7.2)
       eventmachine (>= 0.12.0)
       websocket-driver (>= 0.3.1)
+    haml (4.0.5)
+      tilt
     i18n (0.6.9)
     json (1.8.1)
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
+    mailcatcher (0.2.4)
+      eventmachine
+      haml
+      i18n
+      json
+      mail
+      sinatra
+      skinny (>= 0.1.2)
+      sqlite3-ruby
+      thin
     mime-types (1.25.1)
     minitest (4.7.5)
     multi_json (1.8.4)
@@ -83,7 +96,16 @@ GEM
     sinatra-activerecord (1.3.0)
       activerecord (>= 3.0)
       sinatra (~> 1.0)
+    skinny (0.2.3)
+      eventmachine (~> 1.0.0)
+      thin (~> 1.5.0)
     sqlite3 (1.3.9)
+    sqlite3-ruby (1.3.3)
+      sqlite3 (>= 1.3.3)
+    thin (1.5.1)
+      daemons (>= 1.0.9)
+      eventmachine (>= 0.12.6)
+      rack (>= 1.0.0)
     thread_safe (0.1.3)
       atomic
     tilt (1.4.1)
@@ -109,6 +131,7 @@ DEPENDENCIES
   debugger
   faye-websocket
   mail
+  mailcatcher
   pg
   puma
   rake

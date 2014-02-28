@@ -5,6 +5,14 @@
   margin-left: -600px;
   position: absolute;
   z-index: 2;
+  background: #594F4F;
+  color: white;
+  -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+     -moz-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+          box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+}
+
+#daform {
 }
 
 #new-pickup {
@@ -64,14 +72,6 @@ input:focus {
   // -o-filter: blur(2px);
   // -ms-filter: blur(2px);
   // filter: blur(2px);
-}
-
-.container {
-  background: #594F4F;
-  color: white;
-  -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
-     -moz-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
-          box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
 }
 
 .darkblue {

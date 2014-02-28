@@ -8,16 +8,15 @@ gem 'resque', "~> 1.22.0"
 gem "puma"
 gem "faye-websocket"
 gem "mail"
-# gem "queue_classic"
 gem 'sidekiq'
 gem 'redis'
+gem 'mailcatcher'
 
 group :development do
   gem "sqlite3"
   gem "shotgun"
   gem "tux"
   gem "debugger"
-  gem "mailcatcher"
 end
 
 group :production do 

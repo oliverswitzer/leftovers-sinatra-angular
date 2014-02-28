@@ -7,6 +7,10 @@ gem "rake"
 gem 'resque', "~> 1.22.0"
 gem "puma"
 gem "faye-websocket"
+gem "mail"
+# gem "queue_classic"
+gem 'sidekiq'
+gem 'redis'
 
 group :development do
   gem "sqlite3"

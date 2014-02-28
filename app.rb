@@ -35,6 +35,8 @@ module Name
       set :public_folder, 'public/app'
     end
 
+    
+
     get '/' do
       File.read(File.join('public/app', 'index.html'))
     end

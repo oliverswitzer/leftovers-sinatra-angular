@@ -7,28 +7,22 @@ leftoversControllers.controller('PickupListCtrl', ['$scope','$http', '$routePara
 		// navigator.geolocation.getCurrentPosition(function(position){ latlng = position.coords.longitude + ',' + position.coords.latitude });
     // $routeParams.latlng = latlng;
     $scope.getPickups = function(){
-      $http.get('http://localhost:9292/pickups.json').success(function(data, status, headers, config) {
+      $http.get('/pickups.json').success(function(data, status, headers, config) {
           $scope.pickups = data
-          $scope.orderProp = 'closing_time';
           console.log('Fetched data!');
         });
     };
 
+    $scope.orderProp = 'closing_time';
     $scope.getPickups();
-
-  //   $http.get('http://localhost:9292/pickups.json').success(function(data) {
-  //     $scope.pickups = data;
-  //     $scope.orderProp = 'closing_time';
-  // });
 }]);
 
 leftoversControllers.controller('PickupDetailCtrl', ['$scope','$http', '$routeParams',
 	function($scope, $http, $routeParams){
-		$http.get('http://localhost:9292/pickups/' + $routeParams.id + '.json').success(function(data){
+		$http.get('/pickups/' + $routeParams.id + '.json').success(function(data){
 			$scope.pickup = data;
 		});
-	}]
-	);
+}]);
 
 // app.controller('MainCtrl', function($scope, Poller) {
 //   $scope.name = 'World';

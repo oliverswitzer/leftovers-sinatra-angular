@@ -1,7 +1,7 @@
 var leftoverServices = angular.module('leftoverServices', ['ngResource']);
 
 leftoverServices.factory('Pickup', ["$resource",
-	return $resource('http://localhost:9393/pickups'), {}, {
+	return $resource('rescuisine.herokuapp.com/pickups.json'), {}, {
 		query: {method: 'GET', params: {}, isArray:true}
 	});
 ]);

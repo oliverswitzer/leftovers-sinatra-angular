@@ -1,8 +1,6 @@
 require 'bundler'
 Bundler.require
-
 require 'sinatra/activerecord'
-require 'debugger'
 
 Dir["./lib/*.rb"].each {|file| require file }
 
@@ -15,12 +13,29 @@ set :sockets, []
 module Name
   class App < Sinatra::Application
 
+
+    configure :development do 
+      set :database, "sqlite3:///database.db"
+    end
+
+
+    configure :production do
+      db = URI.parse(ENV['DATABASE_URL'] || 'postgres:///localhost/mydb')
+
+       ActiveRecord::Base.establish_connection(
+         :adapter  => db.scheme == 'postgres' ? 'postgresql' : db.scheme,
+         :host     => db.host,
+         :username => db.user,
+         :password => db.password,
+         :database => db.path[1..-1],
+         :encoding => 'utf8'
+       )
+    end
+    
     configure do
       set :root, File.dirname(__FILE__)
       set :public_folder, 'public/app'
     end
-
-    set :database, "sqlite3:///database.db"
 
     get '/' do
       File.read(File.join('public/app', 'index.html'))

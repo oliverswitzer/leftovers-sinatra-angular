@@ -1,7 +1,6 @@
 require 'faye/websocket'
 require 'thread'
 require 'json'
-require 'debugger'
 
 module Name
   class PickupBackend

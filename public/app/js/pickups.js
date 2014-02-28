@@ -5,12 +5,8 @@ var ws       = new WebSocket(uri);
 
 ws.onopen    = function()  { console.log('websocket opened'); };
 ws.onclose   = function()  { console.log('websocket closed'); };
-<<<<<<< HEAD
 ws.onmessage = function(m) { angular.element($('#all-pickups')).scope().getPickups(); };
 // angular.element($('#all-pickups')).scope().getPickups();
-=======
-ws.onmessage = function(m) {angular.element($("#all-pickups")).scope().getPickups(); }; //fetch the data!
->>>>>>> 03c3c23dec2f105e62abd3c3ae7db7fea77eb377
 // var rest_name_addy = JSON.parse(JSON.parse(m.data)[0].value)
 // var food_desp = JSON.parse(m.data)[1].value
 // var meals = JSON.parse(m.data)[2].value

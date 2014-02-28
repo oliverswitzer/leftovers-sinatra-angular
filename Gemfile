@@ -10,7 +10,6 @@ gem "faye-websocket"
 gem "mail"
 gem 'sidekiq'
 gem 'redis'
-gem 'mailcatcher'
 
 group :development do
   gem "sqlite3"

@@ -1,6 +1,4 @@
-# mail.rb
 require 'mail'
-# require 'sidekiqworker'
 
 class Confirmation 
 

@@ -1498,3 +1498,195 @@
 [67487] 28 Feb 12:06:44 - 2 clients connected (0 slaves), 942032 bytes in use
 [67487] 28 Feb 12:06:49 - DB 0: 5 keys (2 volatile) in 16 slots HT.
 [67487] 28 Feb 12:06:49 - 2 clients connected (0 slaves), 942032 bytes in use
+[67487] 28 Feb 12:06:55 - DB 0: 5 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:06:55 - 2 clients connected (0 slaves), 942032 bytes in use
+[67487] 28 Feb 12:07:00 - DB 0: 5 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:07:00 - 2 clients connected (0 slaves), 942032 bytes in use
+[67487] 28 Feb 12:07:05 - DB 0: 5 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:07:05 - 2 clients connected (0 slaves), 942032 bytes in use
+[67487] 28 Feb 12:07:10 - DB 0: 5 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:07:10 - 2 clients connected (0 slaves), 942032 bytes in use
+[67487] 28 Feb 12:07:15 - DB 0: 5 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:07:15 - 2 clients connected (0 slaves), 942032 bytes in use
+[67487] 28 Feb 12:07:20 - DB 0: 5 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:07:20 - 2 clients connected (0 slaves), 942032 bytes in use
+[67487] 28 Feb 12:07:25 - DB 0: 5 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:07:25 - 2 clients connected (0 slaves), 942032 bytes in use
+[67487] 28 Feb 12:07:30 - DB 0: 5 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:07:30 - 2 clients connected (0 slaves), 942032 bytes in use
+[67487] 28 Feb 12:07:35 - DB 0: 5 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:07:35 - 2 clients connected (0 slaves), 942032 bytes in use
+[67487] 28 Feb 12:07:40 - DB 0: 5 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:07:40 - 2 clients connected (0 slaves), 942032 bytes in use
+[67487] 28 Feb 12:07:45 - DB 0: 5 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:07:45 - 2 clients connected (0 slaves), 942032 bytes in use
+[67487] 28 Feb 12:07:46 - Client closed connection
+[67487] 28 Feb 12:07:46 - Client closed connection
+[67487] 28 Feb 12:07:50 - DB 0: 5 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:07:50 - 0 clients connected (0 slaves), 923104 bytes in use
+[67487] 28 Feb 12:07:55 - DB 0: 5 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:07:55 - 0 clients connected (0 slaves), 923104 bytes in use
+[67487] 28 Feb 12:08:00 - DB 0: 5 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:08:00 - 0 clients connected (0 slaves), 923104 bytes in use
+[67487] 28 Feb 12:08:05 - DB 0: 5 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:08:05 - 0 clients connected (0 slaves), 923104 bytes in use
+[67487] 28 Feb 12:08:08 - Accepted 127.0.0.1:63594
+[67487] 28 Feb 12:08:10 - DB 0: 5 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:08:10 - 1 clients connected (0 slaves), 931920 bytes in use
+[67487] 28 Feb 12:08:11 - Accepted 127.0.0.1:63598
+[67487] 28 Feb 12:08:15 - DB 0: 5 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:08:15 - 2 clients connected (0 slaves), 940704 bytes in use
+[67487] 28 Feb 12:08:20 - DB 0: 5 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:08:20 - 2 clients connected (0 slaves), 940704 bytes in use
+[67487] 28 Feb 12:08:25 - DB 0: 5 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:08:25 - 2 clients connected (0 slaves), 940704 bytes in use
+[67487] 28 Feb 12:08:27 - Accepted 127.0.0.1:63630
+[67487] 28 Feb 12:08:27 * 1 changes in 900 seconds. Saving...
+[67487] 28 Feb 12:08:27 * Background saving started by pid 27931
+[27931] 28 Feb 12:08:27 * DB saved on disk
+[67487] 28 Feb 12:08:27 * Background saving terminated with success
+[67487] 28 Feb 12:08:31 - DB 0: 8 keys (4 volatile) in 16 slots HT.
+[67487] 28 Feb 12:08:31 - 3 clients connected (0 slaves), 951984 bytes in use
+[67487] 28 Feb 12:08:36 - DB 0: 8 keys (4 volatile) in 16 slots HT.
+[67487] 28 Feb 12:08:36 - 3 clients connected (0 slaves), 951984 bytes in use
+[67487] 28 Feb 12:08:41 - DB 0: 6 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:08:41 - 3 clients connected (0 slaves), 952208 bytes in use
+[67487] 28 Feb 12:08:46 - DB 0: 6 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:08:46 - 3 clients connected (0 slaves), 952256 bytes in use
+[67487] 28 Feb 12:08:51 - DB 0: 6 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:08:51 - 3 clients connected (0 slaves), 952256 bytes in use
+[67487] 28 Feb 12:08:56 - DB 0: 6 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:08:56 - 3 clients connected (0 slaves), 952256 bytes in use
+[67487] 28 Feb 12:09:01 - DB 0: 8 keys (4 volatile) in 16 slots HT.
+[67487] 28 Feb 12:09:01 - 3 clients connected (0 slaves), 952112 bytes in use
+[67487] 28 Feb 12:09:06 - DB 0: 8 keys (4 volatile) in 16 slots HT.
+[67487] 28 Feb 12:09:06 - 3 clients connected (0 slaves), 952112 bytes in use
+[67487] 28 Feb 12:09:11 - DB 0: 8 keys (4 volatile) in 16 slots HT.
+[67487] 28 Feb 12:09:11 - 3 clients connected (0 slaves), 951984 bytes in use
+[67487] 28 Feb 12:09:16 - DB 0: 8 keys (4 volatile) in 16 slots HT.
+[67487] 28 Feb 12:09:16 - 3 clients connected (0 slaves), 952032 bytes in use
+[67487] 28 Feb 12:09:21 - DB 0: 5 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:09:21 - 3 clients connected (0 slaves), 951024 bytes in use
+[67487] 28 Feb 12:09:26 - DB 0: 5 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:09:26 - 3 clients connected (0 slaves), 951024 bytes in use
+[67487] 28 Feb 12:09:31 - DB 0: 5 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:09:31 - 3 clients connected (0 slaves), 951072 bytes in use
+[67487] 28 Feb 12:09:36 - DB 0: 5 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:09:36 - 3 clients connected (0 slaves), 951072 bytes in use
+[67487] 28 Feb 12:09:41 - DB 0: 5 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:09:41 - 3 clients connected (0 slaves), 951072 bytes in use
+[67487] 28 Feb 12:09:46 - DB 0: 5 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:09:46 - 3 clients connected (0 slaves), 951072 bytes in use
+[67487] 28 Feb 12:09:51 - DB 0: 5 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:09:51 - 3 clients connected (0 slaves), 951072 bytes in use
+[67487] 28 Feb 12:09:56 - DB 0: 5 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:09:56 - 3 clients connected (0 slaves), 951072 bytes in use
+[67487] 28 Feb 12:10:01 - DB 0: 5 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:10:01 - 3 clients connected (0 slaves), 951072 bytes in use
+[67487] 28 Feb 12:10:07 - DB 0: 5 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:10:07 - 3 clients connected (0 slaves), 951072 bytes in use
+[67487] 28 Feb 12:10:12 - DB 0: 5 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:10:12 - 3 clients connected (0 slaves), 951072 bytes in use
+[67487] 28 Feb 12:10:17 - DB 0: 5 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:10:17 - 3 clients connected (0 slaves), 951072 bytes in use
+[67487] 28 Feb 12:10:22 - DB 0: 5 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:10:22 - 3 clients connected (0 slaves), 951072 bytes in use
+[67487] 28 Feb 12:10:27 - DB 0: 5 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:10:27 - 3 clients connected (0 slaves), 951072 bytes in use
+[67487] 28 Feb 12:10:32 - DB 0: 5 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:10:32 - 3 clients connected (0 slaves), 951072 bytes in use
+[67487] 28 Feb 12:10:37 - DB 0: 5 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:10:37 - 3 clients connected (0 slaves), 951072 bytes in use
+[67487] 28 Feb 12:10:42 - DB 0: 5 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:10:42 - 3 clients connected (0 slaves), 951072 bytes in use
+[67487] 28 Feb 12:10:47 - DB 0: 5 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:10:47 - 3 clients connected (0 slaves), 951072 bytes in use
+[67487] 28 Feb 12:10:52 - DB 0: 5 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:10:52 - 3 clients connected (0 slaves), 951072 bytes in use
+[67487] 28 Feb 12:10:57 - DB 0: 5 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:10:57 - 3 clients connected (0 slaves), 951072 bytes in use
+[67487] 28 Feb 12:11:02 - DB 0: 5 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:11:02 - 3 clients connected (0 slaves), 951072 bytes in use
+[67487] 28 Feb 12:11:07 - DB 0: 5 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:11:07 - 3 clients connected (0 slaves), 951072 bytes in use
+[67487] 28 Feb 12:11:12 - DB 0: 5 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:11:12 - 3 clients connected (0 slaves), 951072 bytes in use
+[67487] 28 Feb 12:11:17 - DB 0: 5 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:11:17 - 3 clients connected (0 slaves), 951072 bytes in use
+[67487] 28 Feb 12:11:22 - DB 0: 5 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:11:22 - 3 clients connected (0 slaves), 951072 bytes in use
+[67487] 28 Feb 12:11:27 - DB 0: 5 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:11:27 - 3 clients connected (0 slaves), 951072 bytes in use
+[67487] 28 Feb 12:11:32 - DB 0: 5 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:11:32 - 3 clients connected (0 slaves), 951072 bytes in use
+[67487] 28 Feb 12:11:38 - DB 0: 5 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:11:38 - 3 clients connected (0 slaves), 951072 bytes in use
+[67487] 28 Feb 12:11:43 - DB 0: 5 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:11:43 - 3 clients connected (0 slaves), 951072 bytes in use
+[67487] 28 Feb 12:11:48 - DB 0: 5 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:11:48 - 3 clients connected (0 slaves), 951072 bytes in use
+[67487] 28 Feb 12:11:53 - DB 0: 5 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:11:53 - 3 clients connected (0 slaves), 951072 bytes in use
+[67487] 28 Feb 12:11:58 - DB 0: 5 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:11:58 - 3 clients connected (0 slaves), 951072 bytes in use
+[67487] 28 Feb 12:12:03 - DB 0: 5 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:12:03 - 3 clients connected (0 slaves), 951072 bytes in use
+[67487] 28 Feb 12:12:08 - DB 0: 5 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:12:08 - 3 clients connected (0 slaves), 951072 bytes in use
+[67487] 28 Feb 12:12:13 - DB 0: 5 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:12:13 - 3 clients connected (0 slaves), 951072 bytes in use
+[67487] 28 Feb 12:12:18 - DB 0: 5 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:12:18 - 3 clients connected (0 slaves), 951072 bytes in use
+[67487] 28 Feb 12:12:23 - DB 0: 5 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:12:23 - 3 clients connected (0 slaves), 951072 bytes in use
+[67487] 28 Feb 12:12:28 - DB 0: 5 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:12:28 - 3 clients connected (0 slaves), 951072 bytes in use
+[67487] 28 Feb 12:12:33 - DB 0: 5 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:12:33 - 3 clients connected (0 slaves), 951072 bytes in use
+[67487] 28 Feb 12:12:38 - DB 0: 5 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:12:38 - 3 clients connected (0 slaves), 951072 bytes in use
+[67487] 28 Feb 12:12:43 - DB 0: 5 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:12:43 - 3 clients connected (0 slaves), 951072 bytes in use
+[67487] 28 Feb 12:12:48 - DB 0: 5 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:12:48 - 3 clients connected (0 slaves), 951072 bytes in use
+[67487] 28 Feb 12:12:53 - DB 0: 5 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:12:53 - 3 clients connected (0 slaves), 951072 bytes in use
+[67487] 28 Feb 12:12:58 - DB 0: 5 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:12:58 - 3 clients connected (0 slaves), 951072 bytes in use
+[67487] 28 Feb 12:13:03 - DB 0: 5 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:13:03 - 3 clients connected (0 slaves), 951072 bytes in use
+[67487] 28 Feb 12:13:08 - DB 0: 5 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:13:08 - 3 clients connected (0 slaves), 951072 bytes in use
+[67487] 28 Feb 12:13:13 - DB 0: 5 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:13:13 - 3 clients connected (0 slaves), 951072 bytes in use
+[67487] 28 Feb 12:13:19 - DB 0: 5 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:13:19 - 3 clients connected (0 slaves), 951072 bytes in use
+[67487] 28 Feb 12:13:24 - DB 0: 5 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:13:24 - 3 clients connected (0 slaves), 951072 bytes in use
+[67487] 28 Feb 12:13:28 * 10 changes in 300 seconds. Saving...
+[67487] 28 Feb 12:13:28 * Background saving started by pid 60894
+[60894] 28 Feb 12:13:28 * DB saved on disk
+[67487] 28 Feb 12:13:28 * Background saving terminated with success
+[67487] 28 Feb 12:13:29 - DB 0: 5 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:13:29 - 3 clients connected (0 slaves), 951072 bytes in use
+[67487] 28 Feb 12:13:34 - DB 0: 5 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:13:34 - 3 clients connected (0 slaves), 951072 bytes in use
+[67487] 28 Feb 12:13:39 - DB 0: 5 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:13:39 - 3 clients connected (0 slaves), 951072 bytes in use
+[67487] 28 Feb 12:13:44 - DB 0: 5 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:13:44 - 3 clients connected (0 slaves), 951072 bytes in use
+[67487] 28 Feb 12:13:49 - DB 0: 5 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:13:49 - 3 clients connected (0 slaves), 951072 bytes in use
+[67487] 28 Feb 12:13:54 - DB 0: 5 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:13:54 - 3 clients connected (0 slaves), 951072 bytes in use
+[67487] 28 Feb 12:13:59 - DB 0: 5 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:13:59 - 3 clients connected (0 slaves), 951072 bytes in use
+[67487] 28 Feb 12:14:04 - DB 0: 5 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:14:04 - 3 clients connected (0 slaves), 951072 bytes in use
+[67487] 28 Feb 12:14:09 - DB 0: 5 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:14:09 - 3 clients connected (0 slaves), 951072 bytes in use
+[67487] 28 Feb 12:14:11 - Client closed connection
+[67487] 28 Feb 12:14:14 - DB 0: 5 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:14:14 - 2 clients connected (0 slaves), 942032 bytes in use
+[67487] 28 Feb 12:14:19 - DB 0: 5 keys (2 volatile) in 16 slots HT.
+[67487] 28 Feb 12:14:19 - 2 clients connected (0 slaves), 942032 bytes in use

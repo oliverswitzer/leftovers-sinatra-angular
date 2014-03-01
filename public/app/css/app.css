@@ -1,9 +1,7 @@
 
 .container {
   display: block;
-  left: 50%;
-  margin-left: -600px;
-  position: absolute;
+  margin-top: 100px;
   z-index: 2;
   background: #594F4F;
   color: white;
@@ -12,12 +10,20 @@
           box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
 }
 
-#daform {
+form {
+  color: black;
 }
 
-#new-pickup {
-  
+.form-group label {
+  text-align: right;
 }
+
+form button {
+  background-color: #83988E;
+}
+
+
+
 
 .center-inner {
   text-align: center;

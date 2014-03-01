@@ -25,10 +25,10 @@ $(function() {
   //   $bgimg.css("background-position", coords);
   // }); 
 
-  $(window).resize(function() {
-    var tableWidth = $(".container").width();
-    $('.container').css("margin-left", -tableWidth/1.92);
-  });
+  // $(window).resize(function() {
+  //   var tableWidth = $(".container").width();
+  //   $('.container').css("margin-left", -tableWidth/1.92);
+  // });
 
   $(window).load(function(){
     
@@ -56,8 +56,8 @@ $(function() {
   
     setTimeout(function() {
 
-      var tableWidth = $(".container").width();
-      $('.container').css("margin-left", -tableWidth/1.92);
+      // var tableWidth = $(".container").width();
+      // $('.container').css("margin-left", -tableWidth/1.92);
       
       var $sections = $('.section'),
       $bgimg = $('#angular-background'),

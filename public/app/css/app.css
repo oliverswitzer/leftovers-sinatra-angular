@@ -1,4 +1,24 @@
 
+#daform {
+  margin: 20px;
+  padding: 50px;
+}
+label {
+  color: white;
+}
+.center {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.form-group {
+  font-size: 1.2em;
+}
+
+.center-inner {
+  text-align: center;
+}
+
 .container {
   display: block;
   margin-top: 100px;
@@ -25,9 +45,7 @@ form button {
 
 
 
-.center-inner {
-  text-align: center;
-}
+
 
 .pickup-details {
   margin-top: 50px;
@@ -65,12 +83,6 @@ select{
   padding: 10px;
 }
 
- 
-
-
-input:focus {
-}
-
 .section {
   z-index: -1;
   height: 500px;
@@ -104,6 +116,8 @@ input:focus {
   // filter: blur(2px);
 }
 
+
+/*background colors*/
 .darkblue {
   background-color: #3A111C;
 }

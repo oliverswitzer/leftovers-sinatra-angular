@@ -1,5 +1,4 @@
 require 'json'
-require 'debugger'
 require 'date'
 
 class Pickup < ActiveRecord::Base

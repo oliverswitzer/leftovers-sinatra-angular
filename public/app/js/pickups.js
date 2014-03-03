@@ -47,7 +47,7 @@ $(function() {
       //     'id': 'pickup-confirm-button',
       //     'class': 'btn'
       // }); 
-      $this.find("button").show();
+      $this.find("table button").show();
       // element.text("Confirm Pickup");
       // element.appendTo($this);
       // element.click(function(){ });
@@ -66,9 +66,17 @@ $(function() {
 
       $sectionContainer.css("top", windowHeight)
 
-      $.each([$bgimg], function() {
-        $(this).css("height", windowHeight);
-      })
+      $bgimg.css("height", windowHeight);
+
+      if( /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) { //if on a mobile device
+        $("body").css("font-size", "2em");
+        $bgimg.remove();
+        $(".container").css("margin-top", 0)
+        $sectionContainer.css("top", 0)
+
+
+        $('label').css("font-size", "1.2em");
+      }
 
       }, 10);
   });

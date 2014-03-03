@@ -1,28 +1,93 @@
 
-#daform {
-  margin: 20px;
-  padding: 50px;
-}
-label {
-  color: white;
-}
+/* Helper CSS */
 .center {
   width: 50%;
   margin: 0 auto;
-}
-
-.form-group {
-  font-size: 1.2em;
 }
 
 .center-inner {
   text-align: center;
 }
 
+
+/* Pickups Filter/Order by Form */
+.search-input {
+  font-size: 1.0;
+  color: grey;
+}
+
+.pickups-header {
+  position: relative;
+  padding: 10px;
+  z-index: 2;
+  position: relative;
+  margin: 30px 20px 50px 20px;
+}
+
+.pickups-header:before {
+   content: " ";
+   position: absolute;
+   z-index: -1;
+   top: -10px;
+   left: -10px;
+   right: -10px;
+   bottom: -10px;
+   border: 10px solid #BCDEA5;
+}
+
+.pickups-header .new-pickup {
+  margin-left: 20px;
+  border-radius: 10px;
+}
+.pickups-header submit {
+  color: white;
+  background-color: #3A111C;
+}
+
+.pickups-header .order-by {
+  margin-left: 20px;
+}
+
+/* New Pickups form*/
+.pac-input > * {
+  width: 100%;
+}
+#daform {
+  margin: 20px;
+  padding: 50px;
+}
+
+.form-group {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#daform label {
+  text-align: right;  
+  color: white;
+}
+
+form {
+  color: black;
+}
+
+button {
+  background-color: #83988E;
+}
+
+/* For map input error */
+.input-error {
+  border-color: red;
+}
+
+/* Pickups index and pages that use container*/
+h1 {
+  text-align: center;
+}
 .container {
   display: block;
   margin-top: 100px;
-  z-index: 2;
+  z-index: 3;
   background: #594F4F;
   color: white;
   -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
@@ -30,58 +95,17 @@ label {
           box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
 }
 
-form {
-  color: black;
+
+#angular-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  background: url(/img/BigManhattanSkyline.jpg) 50% 0 repeat-y fixed;
+  width: 100%;
+  height: 100%;
 }
 
-.form-group label {
-  text-align: right;
-}
-
-form button {
-  background-color: #83988E;
-}
-
-
-
-
-
-
-.pickup-details {
-  margin-top: 50px;
-}
-
-.details {
-  margin: 20px 0 20px 0;
-  padding-left: 100px;
-}
-.food {
-  background-color: #83988E;
-}
-
-.restaurant {
-  background-color: #3A111C; 
-
-}
-
-.table-button{
-  padding: 20px;
-  height: 100px;
-}
-
-select{
-  color: #428bca;
-}
-
-.input-error {
-  border-color: red;
-}
-
-#pickup-search {
-  font-size: 1.4em;
-  color: grey;
-  padding: 10px;
-}
 
 .section {
   z-index: -1;
@@ -100,21 +124,28 @@ select{
   position: absolute;
 }
 
-#angular-background {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -2;
-  background: url(/img/BigManhattanSkyline.jpg) 50% 0 repeat-y fixed;
-  width: 100%;
-  height: 100%;
-/*  background-size: 100%;
-*/  // -webkit-filter: blur(2px);
-  // -moz-filter: blur(2px);
-  // -o-filter: blur(2px);
-  // -ms-filter: blur(2px);
-  // filter: blur(2px);
+
+
+/* Pickups Show Page */
+
+.pickup-details {
+  margin-top: 50px;
 }
+
+.details {
+  margin: 20px 0 20px 0;
+  padding-left: 100px;
+}
+
+.food {
+  background-color: #83988E;
+}
+
+.restaurant {
+  background-color: #3A111C; 
+}
+
+
 
 
 /*background colors*/

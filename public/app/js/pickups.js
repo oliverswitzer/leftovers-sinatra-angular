@@ -78,7 +78,7 @@ $(function() {
         $('label').css("font-size", "1.2em");
       }
 
-      }, 10);
+      }, 150);
   });
 })
 

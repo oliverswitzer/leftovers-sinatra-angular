@@ -82,7 +82,7 @@ module Name
     end
 
     get '/pickups' do
-      Confirmation.deliver
+      Mail.deliver
       redirect '/#/pickups'
     end
 
@@ -91,6 +91,7 @@ module Name
     end
 
     post '/pickups' do
+      ## NOTE, NEW DATE AND TIME PARAMS. NEEDS FIXING!!
       Pickup.new_pickup(params)
       redirect '/'     
     end

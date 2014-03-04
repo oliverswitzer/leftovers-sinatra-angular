@@ -1,5 +1,4 @@
 require 'json'
-require 'debugger'
 require 'date'
 
 class Pickup < ActiveRecord::Base
@@ -7,7 +6,6 @@ class Pickup < ActiveRecord::Base
   belongs_to :shelter
 
   def self.new_pickup(params)
-    debugger
     closing_time = DateTime.strptime("#{params[:pickup][:closing_time][:date]} #{params[:pickup][:closing_time][:time]}", "%Y-%m-%d %H:%M")
     params[:pickup][:closing_time] = closing_time
     restaurant_JSON = JSON.parse(params[:restaurant_data])

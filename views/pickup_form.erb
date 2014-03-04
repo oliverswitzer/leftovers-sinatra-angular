@@ -1,49 +1,47 @@
 <div id="map-canvas"></div>
 
-<input id="pac-input" class="controls" type="text"
-    placeholder="Enter your restaurant">
-<input type="submit" id='submit-map' class="controls"></input>
-
-<div id="daform" class="container">
-  <form method="POST" class="form" action="/pickups">
-    <input type="hidden" name="restaurant_data" id="hidden"></input>
-
-    <div class="form-group">
-      <div class="row">
-        <label class="col-sm-2" for="food_description">Food Description:</label>
-        <div class="col-sm-10">
-          <textarea rows="10" cols="50" id="food_description" placeholder="Describe your food here..." name="pickup[food_description]"></textarea>
-        </div>
-      </div>
-     
-    </div>
-
-    <div class="form-group">
-      <div class="row">
-        <label for="meals" class="col-sm-2">Quantity (# of meals)</label>
-        <div class="col-sm-10">
-          <input type="number" name="pickup[meals]">
-        </div>
-      </div>
-    </div>
-
-    <div class="form-group">
-      <div class="row">
-        <label class="col-sm-2" for="closing_time">Closing Time</label>
-        <div class="col-sm-10">
-          <input type="date" name="pickup[closing_time][date]" class="date"/>
-          <input type="time" name="pickup[closing_time][time]" />
-        </div>
-      </div>
-      
-    </div>
-
-    <div class="col-sm-offset-2 col-sm-10">
-      <button class="inverse" type="submit">Create new Pickup</button>
-    </div>
-  </form>
-
+<div class="map-controls">
+  <input id="pac-input" class="controls" type="text"
+      placeholder="Enter your restaurant">
+  <input type="submit" id='submit-map' class="controls"></input>  
 </div>
+
+
+<div class="container">
+  <div id="daform" class="darkblue">
+    <form method="POST" class="form-horizontal" role="form" action="/pickups">
+      <input type="hidden" name="restaurant_data" id="hidden"></input>
+      <div class="form-group">
+          <label class="col-sm-4" for="food_description">Food Description:</label>
+          <div class="col-sm-8">
+            <textarea cols="20" id="food_description" placeholder="Describe your food here..." name="pickup[food_description]"></textarea>
+          </div>       
+      </div>
+
+      <div class="form-group">
+          <label for="meals" class="col-sm-4">Estimated Number of Meals</label>
+          <div class="col-sm-8">
+            <input type="number" name="pickup[meals]">
+          </div>
+      </div>
+
+      <div class="form-group">
+          <label class="col-sm-4" for="closing_time">Closing Time</label>
+          <div class="col-sm-8">
+            <input id="datePicker" type="date" name="pickup[closing_time][date]" class="date"/>
+            <input id="timePicker" type="time" name="pickup[closing_time][time]" />
+          </div>
+      </div>
+
+      <div class="form-group">
+          <div class="col-sm-offset-4 col-sm-8">
+            <button type="submit">Create new Pickup</button>
+          </div>
+      </div>
+    </form>
+  </div>  
+</div>
+
 
 <script type="text/javascript" src="/js/map.js"></script>
 <script type="text/javascript" src="/js/jquery.timepicker.min.js"></script>
@@ -57,27 +55,39 @@ $(document).ready(function() {
 
   $('#submit-map').on('click', function() {
     
-    if($("#hidden").attr("value") && $("#pac-input").val()){
+    if ($("#hidden").attr("value") && $("#pac-input").val()){
       $map.fadeOut('medium', function() {
         $form.fadeIn('slow');
       });
-    }else{
+    } else {
       $("#pac-input").addClass("input-error");
     }
   });
 
-  $('#timePicker').timepicker({ 'scrollDefaultNow': true });
-  $('#datePicker').datepicker({
-        'format': 'm/d/yyyy',
-        'autoclose': true
-    });
+  // $('#timePicker').timepicker({ 'scrollDefaultNow': true });
+  // $('#datePicker').datepicker({
+  //       'format': 'm/d/yyyy',
+  //       'autoclose': true
+  //   });
 
-  $('#datePicker').datepicker("setDate", new Date());
+  // $('#datePicker').datepicker("setDate", new Date());
   
   $(".daform").on("submit", function(event) {
     debugger;
       ws.send(JSON.stringify($('form').serializeArray()));
     });
+
+  Date.prototype.toDateInputValue = (function() {
+    var local = new Date(this);
+    local.setMinutes(this.getMinutes() - this.getTimezoneOffset()); // accounts for timezone differences 
+    return local.toJSON();
+  });
+
+
+
+  $('#timePicker').val(new Date().toDateInputValue().slice(11,16))
+  $('#datePicker').val(new Date().toDateInputValue().slice(0,10));
+ 
 
 });
 </script>

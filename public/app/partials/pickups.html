@@ -1,21 +1,38 @@
 <div id="big_container">
   <div class="container">
-    <div class="row">
-      <div class="col-md-4 table-button">
-        <input ng-model="query" id="pickup-search" placeholder="Search for a listing..."></input>
-      </div>
-      <div class="col-md-4 table-button">
-        <select ng-model="orderProp" id="pickup-order">
-          <option value="name">Name</option>
-          <option value="address">Address</option>
-          <option value="closing_time">Closing Time</option>
-          <option value="meals">Food Quantity</option>
-        </select>
-      </div>
-      <div class="col-md-2 col-md-offset-2 table-button">
-        <h3><a href="/pickups/new" id="new-pickup">New Pickup</a></h3>
-      </div>
-    </div>
+  <h1>Find restaurants that are giving away food</h1>
+    <div class="pickups-header darkgreen">
+      <form class="form-inline">
+        <div class="form-group">
+          <label for="pickup-search">Find a restaurant</label>
+          <input ng-model="query" size="55" class="search-input form-control" id="pickup-search" placeholder="Search by borough, food description or restaurant name"></input>
+        </div>
+        <div class="form-group order-by">
+          <label for="pickup-order">Order by:</label>
+          <select ng-model="orderProp" class="form-control search-input" id="pickup-order">
+            <option value="name">Name</option>
+            <option value="address">Address</option>
+            <option value="closing_time">Closing Time</option>
+            <option value="meals">Food Quantity</option>
+          </select>
+        </div>
+        <div class="form-group new-pickup">
+          <div class="form-group">
+            <label for="new-pickup">Got Food?</label>
+          </div>
+          <div class="form-group search-input">
+            <a href="/pickups/new"><submit id="new-pickup" class="form-control">New Pickup</submit></a>
+          </div>
+
+        </div>
+    </form>
+  </div>
+    
+      
+
+    
+
+   
     <table class="table">
       <tr>
         <th>Restaurant Name</th>

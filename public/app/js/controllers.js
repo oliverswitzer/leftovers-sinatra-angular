@@ -11,7 +11,7 @@ leftoversControllers.controller('PickupListCtrl', ['$scope','$http', '$routePara
           console.log('Fetched data!');
         });
     };
-
+    $scope.getDate = function(date){return new Date(date.replace("T"," ").replace("Z",""))}
     $scope.orderProp = 'closing_time';
     $scope.getPickups();
 }]);
@@ -20,7 +20,10 @@ leftoversControllers.controller('PickupDetailCtrl', ['$scope','$http', '$routePa
 	function($scope, $http, $routeParams){
 		$http.get('/pickups/' + $routeParams.id + '.json').success(function(data){
 			$scope.pickup = data;
+      var closing_time = $scope.pickup.closing_time;
+      $scope.pickup.closing_time = new Date(closing_time.replace("T"," ").replace("Z",""));
 		});
+
 }]);
 
 

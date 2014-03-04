@@ -41,7 +41,7 @@
         <td>{{pickup.restaurant.address}}</td>
         <td>{{pickup.food_description}}</td>
         <td>{{pickup.meals}}</td>
-        <td>{{pickup.closing_time | date: 'H:mm:ss' }}</td>
+        <td>{{getDate(pickup.closing_time) | date: 'short' }}</td>
         <td><a href="#/pickups/{{pickup.id}}"><button class="confirm-pickup-btn" hidden>Confirm Pickup</button></a></td>
       </tr>
 

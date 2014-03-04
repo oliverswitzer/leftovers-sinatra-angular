@@ -1,6 +1,6 @@
 require 'mail'
 
-class Mail 
+class Confirmation 
 
   def self.deliver
     SidekiqWorker.perform_async("bob", 5)  

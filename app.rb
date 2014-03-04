@@ -82,7 +82,7 @@ module Name
     end
 
     get '/pickups' do
-      Mail.deliver
+      Confirmation.deliver
       redirect '/#/pickups'
     end
 

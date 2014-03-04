@@ -23,16 +23,11 @@
           <div class="form-group search-input">
             <a href="/pickups/new"><submit id="new-pickup" class="form-control">New Pickup</submit></a>
           </div>
-
         </div>
     </form>
   </div>
     
       
-
-    
-
-   
     <table class="table">
       <tr>
         <th>Restaurant Name</th>
@@ -41,7 +36,7 @@
         <th>Quantity (# meals)</th>
         <th>Closing Time</th>
       </tr>
-      <tr ng-repeat="pickup in pickups | filter: query | orderBy:orderProp" data-id={{pickup.id}} id="all-pickups">
+      <tr ng-repeat="pickup in pickups | filter: query | orderBy:orderProp" repeat-done data-id={{pickup.id}} id="all-pickups">
         <td>{{pickup.restaurant.name}}</td>
         <td>{{pickup.restaurant.address}}</td>
         <td>{{pickup.food_description}}</td>

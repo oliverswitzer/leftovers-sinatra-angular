@@ -13,6 +13,8 @@
 var leftoversApp = angular.module('leftoversApp',['ngRoute',
 'leftoversControllers']);
 
+
+
 leftoversApp.config(['$routeProvider', function($routeProvider){
 	$routeProvider.when("/pickups", {
 		templateUrl: "partials/pickups.html",
@@ -24,7 +26,42 @@ leftoversApp.config(['$routeProvider', function($routeProvider){
 
 }]);
 
+leftoversApp.directive('repeatDone', function() {
+    return function(scope, element, attrs) {
+      // if (scope.$last) { // all are rendered
+        element.on("click", function() {
+          var $this = $(this);
+          $this.addClass("lightblue");
+          $("tr").not($this).removeClass("lightblue");
+          $(".confirm-pickup-btn").hide() //hide all other buttons
+          $this.find(".confirm-pickup-btn").show();
 
+        })
+        //$('a[data-toggle="tooltip"]').tooltip(); // NOT CORRECT!
+        // $timeout(function() {
+        //   $(".table").on("click", "tr", function(){
+        //     $this = $(this);
+        //     $this.addClass("lightblue");
+        //     $("tr").not($this).removeClass("lightblue");
+
+        //     //Add sbutton to selected row/pickup
+        //     $(".confirm-pickup-btn").hide() //hide all other buttons
+            
+        //     //var element = $("<a href='#'><input type='button'>Confirm</button></a>");
+        //     // element.prop({
+        //     //     'href': '#/pickups/' + $this.data("id"),
+        //     //     'id': 'pickup-confirm-button',
+        //     //     'class': 'btn'
+        //     // }); 
+        //     $this.find("table button").show();
+        //     // element.text("Confirm Pickup");
+        //     // element.appendTo($this);
+        //     // element.click(function(){ });
+        //   });
+        // }, 0); // wait...
+  
+    }
+  });
 
 
 

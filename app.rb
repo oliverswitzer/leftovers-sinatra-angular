@@ -91,7 +91,6 @@ module Name
     end
 
     post '/pickups' do
-      ## NOTE, NEW DATE AND TIME PARAMS. NEEDS FIXING!!
       Pickup.new_pickup(params)
       redirect '/'     
     end

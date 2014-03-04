@@ -1,4 +1,4 @@
-<div id="big_container">
+<div id="big_container" jquery-load>
   <div class="container">
   <h1>Find restaurants that are giving away food</h1>
     <div class="pickups-header darkgreen">
@@ -41,7 +41,7 @@
         <td>{{pickup.restaurant.address}}</td>
         <td>{{pickup.food_description}}</td>
         <td>{{pickup.meals}}</td>
-        <td>{{pickup.closing_time | date: 'short'}}</td>
+        <td>{{pickup.closing_time | date: 'H:mm:ss' }}</td>
         <td><a href="#/pickups/{{pickup.id}}"><button class="confirm-pickup-btn" hidden>Confirm Pickup</button></a></td>
       </tr>
 

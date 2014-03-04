@@ -28,7 +28,7 @@ leftoversApp.config(['$routeProvider', function($routeProvider){
 
 leftoversApp.directive('confirmButton', function() {
     return function(scope, element, attrs) {
-      console.log(scope);
+      // scope.pickup.closing_time = scope.pickup.closing_time.replace("T", " ").replace("Z", "");
       element.on("click", function() {
         var $this = $(this);
         $this.addClass("lightblue");
@@ -38,6 +38,35 @@ leftoversApp.directive('confirmButton', function() {
       });
     }
   });
+
+leftoversApp.directive('jqueryLoad', function() {
+    return function(scope, element, attrs) {
+      var $sections = $('.section'),
+          $bgimg = $('#angular-background'),
+          $sectionContainer = $('#section_container'),
+          windowHeight = $(window).height();
+
+      $sectionContainer.css("top", windowHeight);
+      $bgimg.css("height", windowHeight);
+
+      if( /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) { //if on a mobile device
+        $("body").css("font-size", "2em");
+        $bgimg.remove();
+        $(".container").css("margin-top", 0);
+        $sectionContainer.css("top", 0);
+        $('label').css("font-size", "1.2em");
+      } else {
+        $(window).scroll(function() {   //for parallax effect on hero
+          var yPos = -($(this).scrollTop() / 5);
+          var coords = '50% ' + yPos + 'px';
+          $bgimg.css("background-position", coords);
+        }); 
+      }
+      
+    };
+
+  });
+
 
 
 

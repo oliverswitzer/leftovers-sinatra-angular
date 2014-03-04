@@ -10,7 +10,6 @@ class Pickup < ActiveRecord::Base
     params[:pickup][:closing_time] = closing_time
     restaurant_JSON = JSON.parse(params[:restaurant_data])
     restaurant = Restaurant.create(restaurant_JSON)
-
     pickup = Pickup.new(params[:pickup])
     pickup.restaurant = restaurant
     pickup.save

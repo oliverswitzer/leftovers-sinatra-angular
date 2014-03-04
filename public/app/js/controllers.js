@@ -4,8 +4,7 @@ var leftoversControllers = angular.module('leftoversControllers',[]);
 
 leftoversControllers.controller('PickupListCtrl', ['$scope','$http', '$routeParams', '$timeout',
 	function($scope, $http, $routeParams, $timeout){
-		// navigator.geolocation.getCurrentPosition(function(position){ latlng = position.coords.longitude + ',' + position.coords.latitude });
-    // $routeParams.latlng = latlng;
+
     $scope.getPickups = function(){
       $http.get('/pickups.json').success(function(data, status, headers, config) {
           $scope.pickups = data
@@ -13,9 +12,6 @@ leftoversControllers.controller('PickupListCtrl', ['$scope','$http', '$routePara
         });
     };
 
-    // $scope.loadjQuery = function() {
-      
-    // }
     $scope.orderProp = 'closing_time';
     $scope.getPickups();
 }]);
@@ -26,13 +22,6 @@ leftoversControllers.controller('PickupDetailCtrl', ['$scope','$http', '$routePa
 			$scope.pickup = data;
 		});
 }]);
-
-// app.controller('MainCtrl', function($scope, Poller) {
-//   $scope.name = 'World';
-//   $scope.data = Poller.data;
-// });
-// app.controller('StartCtrl',function(){});
-// app.run(function(Poller) {});
 
 
 

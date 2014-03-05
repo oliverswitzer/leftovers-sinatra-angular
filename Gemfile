@@ -10,6 +10,7 @@ gem "faye-websocket"
 gem "mail"
 gem 'sidekiq'
 gem 'redis'
+gem 'twilio-ruby' 
 
 group :development do
   gem "sqlite3"

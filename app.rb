@@ -1,4 +1,4 @@
-  require 'bundler'
+require 'bundler'
 Bundler.require
 require 'sinatra/activerecord'
 
@@ -34,9 +34,7 @@ module Name
       set :root, File.dirname(__FILE__)
       set :public_folder, 'public/app'
     end
-
-    
-
+ 
     get '/' do
       File.read(File.join('public/app', 'index.html'))
     end
@@ -82,7 +80,6 @@ module Name
     end
 
     get '/pickups' do
-      Confirmation.deliver
       redirect '/#/pickups'
     end
 
@@ -97,6 +94,11 @@ module Name
 
     put '/pickups/:id' do
 
+    end
+
+    post '/confirm' do
+      Confirmation.deliver(params[:number])
+      redirect "/#/pickups/#{params[:pickup_id]}"
     end
 
     # get '/:filename' do

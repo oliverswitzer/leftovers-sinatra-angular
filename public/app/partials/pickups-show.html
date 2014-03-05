@@ -18,6 +18,10 @@
       <h3>Food quantity: {{pickup.meals}}</h3>
     </div>
   </div>
-  
+  <form method="POST" action="/confirm" >
+    <input class="form-control" type="tel" name="number"></input>
+    <input type="hidden" name="pickup_id" value={{pickup.id}}>
+    <input class="form-control" type="submit"/> 
+  </form>
   
 </div>

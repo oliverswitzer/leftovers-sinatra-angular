@@ -7,7 +7,7 @@ class Pickup < ActiveRecord::Base
 
   def self.new_pickup(params)
     closing_time = DateTime.strptime("#{params[:pickup][:closing_time][:date]} #{params[:pickup][:closing_time][:time]}", "%Y-%m-%d %H:%M")
-    params[:pickup][:closing_time] = closing_time
+    params[:pickup][:closing_time] = closing_time.strftime("%Y-%m-%d %r")
     restaurant_JSON = JSON.parse(params[:restaurant_data])
     restaurant = Restaurant.create(restaurant_JSON)
     pickup = Pickup.new(params[:pickup])

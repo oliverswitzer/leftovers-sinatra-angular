@@ -12,7 +12,7 @@ leftoversControllers.controller('PickupListCtrl', ['$scope','$http', '$routePara
         });
     };
     $scope.getDate = function(date){return new Date(date.replace("T"," ").replace("Z",""))}
-    $scope.orderProp = 'closing_time';
+    $scope.orderProp = '-closing_time';
     $scope.getPickups();
 }]);
 

@@ -28,6 +28,7 @@ leftoversApp.config(['$routeProvider', function($routeProvider){
 
 leftoversApp.directive('confirmButton', function() {
     return function(scope, element, attrs) {
+      // $(element).children().last().hide();  
       // scope.pickup.closing_time = scope.pickup.closing_time.replace("T", " ").replace("Z", "");
       element.on("click", function() {
         var $this = $(this);
@@ -38,6 +39,7 @@ leftoversApp.directive('confirmButton', function() {
       });
     }
   });
+
 
 leftoversApp.directive('jqueryLoad', function() {
     return function(scope, element, attrs) {
@@ -53,6 +55,7 @@ leftoversApp.directive('jqueryLoad', function() {
         $("body").css("font-size", "2em");
         $bgimg.remove();
         $(".container").css("margin-top", 0);
+        $(".container").css("width", "100%")
         $sectionContainer.css("top", 0);
         $('label').css("font-size", "1.2em");
       } else {

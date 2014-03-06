@@ -9,7 +9,9 @@
   text-align: center;
 }
 
-
+body {
+  font-family: 'Istok Web', sans-serif
+}
 /* Pickups Filter/Order by Form */
 .search-input {
   font-size: 1.0;
@@ -40,18 +42,31 @@
   border-radius: 10px;
 }
 .pickups-header submit {
+  margin-bottom: 10px;
   color: white;
   background-color: #3A111C;
+}
+
+.pickups-header span {
+  font-weight: bold;
+  font-size: 1.15em;
+  margin-right: 5px;
 }
 
 .pickups-header .order-by {
   margin-left: 20px;
 }
 
+td > a > button.confirm-pickup-btn {
+  display:none;
+  color: white;
+  background-color: #3A111C;
+}
 /* New Pickups form*/
 .pac-input > * {
   width: 100%;
 }
+
 #daform {
   margin: 20px;
   padding: 50px;
@@ -64,15 +79,33 @@
 
 #daform label {
   text-align: right;  
-  color: white;
+  color: black;
 }
 
-form {
+.new-pickup-form {
+  padding: 5%;
+  color: black;
+  font-size: 1em;
+
+}
+
+.new-pickup-header {
+  margin-bottom: 20px;
+}
+
+.new-pickup-header span {
+  line-height: 1.2;
+  font-size: 0.8em;
+  color:#3A111C;
+}
+
+.new-pickup-form .form-group label {
   color: black;
 }
 
 button {
-  background-color: #83988E;
+  color: white;
+  background-color: #3A111C;
 }
 
 /* For map input error */
@@ -84,9 +117,9 @@ button {
 h1 {
   text-align: center;
 }
-.container {
-  display: block;
-  margin-top: 100px;
+.main-container {
+  width: 80%;
+  margin-top: 50px;
   z-index: 3;
   background: #594F4F;
   color: white;
@@ -129,24 +162,40 @@ h1 {
 /* Pickups Show Page */
 
 .pickup-details {
+  text-align: center;
   margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .details {
-  margin: 20px 0 20px 0;
-  padding-left: 100px;
+  color: black;
+  padding: 20px;
+  text-align: center;
+  width: 80%;
+  display: inline-block;
+  min-height: 225px;
 }
 
 .food {
-  background-color: #83988E;
+  background-color:#83988E;
 }
 
 .restaurant {
-  background-color: #3A111C; 
+  background-color:#BCDEA5; 
 }
 
+.phone {
+  background-color: #E6F9BC;
+}
 
-
+.static-map {
+  margin-top: 40px;
+  width: 80%;
+  border: 5px solid #3A111C;
+  -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+     -moz-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+          box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+}
 
 /*background colors*/
 .darkblue {

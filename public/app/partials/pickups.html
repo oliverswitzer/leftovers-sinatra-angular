@@ -1,14 +1,14 @@
 <div id="big_container" jquery-load>
-  <div class="container">
+  <div class="main-container container">
   <h1>Find restaurants that are giving away food</h1>
     <div class="pickups-header darkgreen">
       <form class="form-inline">
         <div class="form-group">
-          <label for="pickup-search">Find a restaurant</label>
-          <input ng-model="query" size="55" class="search-input form-control" id="pickup-search" placeholder="Search by borough, food description or restaurant name"></input>
+          <label for="pickup-search"><span>Find a restaurant:</span></label>
+          <input ng-model="query" size="45" class="search-input form-control" id="pickup-search" placeholder="Search by borough, food description or restaurant"></input>
         </div>
         <div class="form-group order-by">
-          <label for="pickup-order">Order by:</label>
+          <span><label for="pickup-order">Order by:</label></span>
           <select ng-model="orderProp" class="form-control search-input" id="pickup-order">
             <option value="name">Name</option>
             <option value="address">Address</option>
@@ -17,9 +17,6 @@
           </select>
         </div>
         <div class="form-group new-pickup">
-          <div class="form-group">
-            <label for="new-pickup">Got Food?</label>
-          </div>
           <div class="form-group search-input">
             <a href="/pickups/new"><submit id="new-pickup" class="form-control">New Pickup</submit></a>
           </div>
@@ -42,7 +39,7 @@
         <td>{{pickup.food_description}}</td>
         <td>{{pickup.meals}}</td>
         <td>{{getDate(pickup.closing_time) | date: 'short' }}</td>
-        <td><a href="#/pickups/{{pickup.id}}"><button class="confirm-pickup-btn" hidden>Confirm Pickup</button></a></td>
+        <td><a href="#/pickups/{{pickup.id}}"><button class="confirm-pickup-btn form-control">Pickup?</button></a></td>
       </tr>
 
     </table>

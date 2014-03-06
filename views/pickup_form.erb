@@ -7,21 +7,22 @@
 </div>
 
 
-<div class="container">
-  <div id="daform" class="darkblue">
-    <form method="POST" class="form-horizontal" role="form" action="/pickups">
+<div class="main-container container">
+  <div id="daform" class="darkgreen">
+    <h1 class="new-pickup-header">Submit pickup information for <br><span></span><br><span></span></h1>
+    <form method="POST" class="form-horizontal lightgreen new-pickup-form" role="form" action="/pickups">
       <input type="hidden" name="restaurant_data" id="hidden"></input>
       <div class="form-group">
           <label class="col-sm-4" for="food_description">Food Description:</label>
           <div class="col-sm-8">
-            <textarea cols="20" id="food_description" placeholder="Describe your food here..." name="pickup[food_description]"></textarea>
+            <textarea cols="25" id="food_description" placeholder="Describe your food here..." name="pickup[food_description]"></textarea>
           </div>       
       </div>
 
       <div class="form-group">
           <label for="meals" class="col-sm-4">Estimated Number of Meals</label>
           <div class="col-sm-8">
-            <input type="number" name="pickup[meals]">
+            <input type="number" value="1" name="pickup[meals]">
           </div>
       </div>
 

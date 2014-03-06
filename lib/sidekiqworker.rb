@@ -1,8 +1,8 @@
 class SidekiqWorker
   include Sidekiq::Worker
 
-  def perform(number)
-
+  def perform(number, pickup_id)
+    pickup = Pickup.find(pickup_id)
     keys = YAML::load_file("data/keys.yml")
     # put your own credentials here 
     account_sid = 'AC3552e9a7f1c9aaadacbf1ed005d67b75'
@@ -15,7 +15,7 @@ class SidekiqWorker
     @client.account.messages.create({
       :from => '+12679662099', 
       :to => number, 
-      :body => "Rescuisine Confirmation Number: #{confirmation_num}" 
+      :body => "Rescuisine Confirmation Number: #{confirmation_num} for pickup at #{pickup.restaurant.name} #{pickup.restaurant.address} on #{pickup.closing_time.strftime("%m/%d/%y %r")}" 
     })
   end
 end

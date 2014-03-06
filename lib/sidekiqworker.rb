@@ -15,7 +15,7 @@ class SidekiqWorker
     @client.account.messages.create({
       :from => '+12679662099', 
       :to => number, 
-      :body => "Rescuisine Confirmation Number: #{confirmation_num}"  
+      :body => "Rescuisine Confirmation Number: #{confirmation_num}" 
     })
   end
 end

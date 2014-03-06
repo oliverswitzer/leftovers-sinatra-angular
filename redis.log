@@ -3970,3 +3970,18 @@
 [13125] 05 Mar 19:19:08 - 2 clients connected (0 slaves), 940064 bytes in use
 [13125] 05 Mar 19:19:13 - 2 clients connected (0 slaves), 940064 bytes in use
 [13125] 05 Mar 19:19:18 - 2 clients connected (0 slaves), 940064 bytes in use
+[13125] 05 Mar 19:19:23 - 2 clients connected (0 slaves), 940064 bytes in use
+[13125] 05 Mar 19:19:28 - 2 clients connected (0 slaves), 940064 bytes in use
+[13125] 05 Mar 19:19:33 - 2 clients connected (0 slaves), 940064 bytes in use
+[13125] 05 Mar 19:19:38 - 2 clients connected (0 slaves), 940064 bytes in use
+[13125] 05 Mar 19:19:43 - 2 clients connected (0 slaves), 940064 bytes in use
+[13125] 05 Mar 19:19:48 - 2 clients connected (0 slaves), 940064 bytes in use
+[13125] 05 Mar 19:19:50 - Client closed connection
+[13125] 05 Mar 19:19:50 - Client closed connection
+[13125] 05 Mar 19:19:53 - 0 clients connected (0 slaves), 922352 bytes in use
+[13125] 05 Mar 19:19:54 # Received SIGTERM, scheduling shutdown...
+[13125] 05 Mar 19:19:54 # User requested shutdown...
+[13125] 05 Mar 19:19:54 * Saving the final RDB snapshot before exiting.
+[13125] 05 Mar 19:19:54 * DB saved on disk
+[13125] 05 Mar 19:19:54 * Removing the pid file.
+[13125] 05 Mar 19:19:54 # Redis is now ready to exit, bye bye...

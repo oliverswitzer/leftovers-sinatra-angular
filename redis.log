@@ -4677,3 +4677,124 @@
 [20692] 06 Mar 09:03:28 * DB saved on disk
 [20692] 06 Mar 09:03:28 * Removing the pid file.
 [20692] 06 Mar 09:03:28 # Redis is now ready to exit, bye bye...
+[52881] 06 Mar 09:05:28 * Server started, Redis version 2.2.14
+[52881] 06 Mar 09:05:28 * DB loaded from disk: 0 seconds
+[52881] 06 Mar 09:05:28 * The server is now ready to accept connections on port 6379
+[52881] 06 Mar 09:05:28 - DB 0: 6 keys (3 volatile) in 12 slots HT.
+[52881] 06 Mar 09:05:28 - 0 clients connected (0 slaves), 923824 bytes in use
+[52881] 06 Mar 09:05:28 - Accepted 127.0.0.1:55550
+[52881] 06 Mar 09:05:28 - Client closed connection
+[52881] 06 Mar 09:05:28 - Accepted 127.0.0.1:55552
+[52881] 06 Mar 09:05:28 - Client closed connection
+[52881] 06 Mar 09:05:33 - DB 0: 6 keys (3 volatile) in 8 slots HT.
+[52881] 06 Mar 09:05:33 - 0 clients connected (0 slaves), 923824 bytes in use
+[52881] 06 Mar 09:05:34 - Accepted 127.0.0.1:55554
+[52881] 06 Mar 09:05:36 - Accepted 127.0.0.1:55555
+[52881] 06 Mar 09:05:39 - DB 0: 6 keys (3 volatile) in 8 slots HT.
+[52881] 06 Mar 09:05:39 - 2 clients connected (0 slaves), 941456 bytes in use
+[52881] 06 Mar 09:05:44 - DB 0: 6 keys (3 volatile) in 8 slots HT.
+[52881] 06 Mar 09:05:44 - 2 clients connected (0 slaves), 941456 bytes in use
+[52881] 06 Mar 09:05:49 - DB 0: 6 keys (3 volatile) in 8 slots HT.
+[52881] 06 Mar 09:05:49 - 2 clients connected (0 slaves), 941456 bytes in use
+[52881] 06 Mar 09:05:54 - DB 0: 6 keys (3 volatile) in 8 slots HT.
+[52881] 06 Mar 09:05:54 - 2 clients connected (0 slaves), 941456 bytes in use
+[52881] 06 Mar 09:05:59 - DB 0: 6 keys (3 volatile) in 8 slots HT.
+[52881] 06 Mar 09:05:59 - 2 clients connected (0 slaves), 941456 bytes in use
+[52881] 06 Mar 09:06:04 - DB 0: 6 keys (3 volatile) in 8 slots HT.
+[52881] 06 Mar 09:06:04 - 2 clients connected (0 slaves), 941456 bytes in use
+[52881] 06 Mar 09:06:09 - DB 0: 6 keys (3 volatile) in 8 slots HT.
+[52881] 06 Mar 09:06:09 - 2 clients connected (0 slaves), 941456 bytes in use
+[52881] 06 Mar 09:06:14 - DB 0: 6 keys (3 volatile) in 8 slots HT.
+[52881] 06 Mar 09:06:14 - 2 clients connected (0 slaves), 941456 bytes in use
+[52881] 06 Mar 09:06:17 - Accepted 127.0.0.1:55592
+[52881] 06 Mar 09:06:19 - DB 0: 6 keys (3 volatile) in 8 slots HT.
+[52881] 06 Mar 09:06:19 - 3 clients connected (0 slaves), 951840 bytes in use
+[52881] 06 Mar 09:06:24 - DB 0: 6 keys (3 volatile) in 8 slots HT.
+[52881] 06 Mar 09:06:24 - 3 clients connected (0 slaves), 951888 bytes in use
+[52881] 06 Mar 09:06:29 - DB 0: 6 keys (3 volatile) in 8 slots HT.
+[52881] 06 Mar 09:06:29 - 3 clients connected (0 slaves), 951888 bytes in use
+[52881] 06 Mar 09:06:33 - Client closed connection
+[52881] 06 Mar 09:06:34 - DB 0: 6 keys (3 volatile) in 8 slots HT.
+[52881] 06 Mar 09:06:34 - 2 clients connected (0 slaves), 942816 bytes in use
+[52881] 06 Mar 09:06:39 - DB 0: 6 keys (3 volatile) in 8 slots HT.
+[52881] 06 Mar 09:06:39 - 2 clients connected (0 slaves), 942816 bytes in use
+[52881] 06 Mar 09:06:41 - Client closed connection
+[52881] 06 Mar 09:06:41 - Client closed connection
+[52881] 06 Mar 09:06:44 - DB 0: 6 keys (3 volatile) in 8 slots HT.
+[52881] 06 Mar 09:06:44 - 0 clients connected (0 slaves), 923888 bytes in use
+[52881] 06 Mar 09:06:49 - DB 0: 6 keys (3 volatile) in 8 slots HT.
+[52881] 06 Mar 09:06:49 - 0 clients connected (0 slaves), 923888 bytes in use
+[52881] 06 Mar 09:06:54 - DB 0: 6 keys (3 volatile) in 8 slots HT.
+[52881] 06 Mar 09:06:54 - 0 clients connected (0 slaves), 923888 bytes in use
+[52881] 06 Mar 09:06:59 - DB 0: 6 keys (3 volatile) in 8 slots HT.
+[52881] 06 Mar 09:06:59 - 0 clients connected (0 slaves), 923888 bytes in use
+[52881] 06 Mar 09:07:05 - DB 0: 6 keys (3 volatile) in 8 slots HT.
+[52881] 06 Mar 09:07:05 - 0 clients connected (0 slaves), 923888 bytes in use
+[52881] 06 Mar 09:07:10 - DB 0: 6 keys (3 volatile) in 8 slots HT.
+[52881] 06 Mar 09:07:10 - 0 clients connected (0 slaves), 923888 bytes in use
+[52881] 06 Mar 09:07:15 - DB 0: 6 keys (3 volatile) in 8 slots HT.
+[52881] 06 Mar 09:07:15 - 0 clients connected (0 slaves), 923888 bytes in use
+[52881] 06 Mar 09:07:20 - DB 0: 6 keys (3 volatile) in 8 slots HT.
+[52881] 06 Mar 09:07:20 - 0 clients connected (0 slaves), 923888 bytes in use
+[52881] 06 Mar 09:07:25 - DB 0: 6 keys (3 volatile) in 8 slots HT.
+[52881] 06 Mar 09:07:25 - 0 clients connected (0 slaves), 923888 bytes in use
+[52881] 06 Mar 09:07:30 - DB 0: 6 keys (3 volatile) in 8 slots HT.
+[52881] 06 Mar 09:07:30 - 0 clients connected (0 slaves), 923888 bytes in use
+[52881] 06 Mar 09:07:35 - DB 0: 6 keys (3 volatile) in 8 slots HT.
+[52881] 06 Mar 09:07:35 - 0 clients connected (0 slaves), 923888 bytes in use
+[52881] 06 Mar 09:07:40 - DB 0: 6 keys (3 volatile) in 8 slots HT.
+[52881] 06 Mar 09:07:40 - 0 clients connected (0 slaves), 923888 bytes in use
+[52881] 06 Mar 09:07:45 - DB 0: 6 keys (3 volatile) in 8 slots HT.
+[52881] 06 Mar 09:07:45 - 0 clients connected (0 slaves), 923888 bytes in use
+[52881] 06 Mar 09:07:50 - DB 0: 6 keys (3 volatile) in 8 slots HT.
+[52881] 06 Mar 09:07:50 - 0 clients connected (0 slaves), 923888 bytes in use
+[52881] 06 Mar 09:07:55 - DB 0: 6 keys (3 volatile) in 8 slots HT.
+[52881] 06 Mar 09:07:55 - 0 clients connected (0 slaves), 923888 bytes in use
+[52881] 06 Mar 09:08:00 - DB 0: 6 keys (3 volatile) in 8 slots HT.
+[52881] 06 Mar 09:08:00 - 0 clients connected (0 slaves), 923888 bytes in use
+[52881] 06 Mar 09:08:05 - DB 0: 6 keys (3 volatile) in 8 slots HT.
+[52881] 06 Mar 09:08:05 - 0 clients connected (0 slaves), 923888 bytes in use
+[52881] 06 Mar 09:08:10 - DB 0: 6 keys (3 volatile) in 8 slots HT.
+[52881] 06 Mar 09:08:10 - 0 clients connected (0 slaves), 923888 bytes in use
+[52881] 06 Mar 09:08:15 - DB 0: 6 keys (3 volatile) in 8 slots HT.
+[52881] 06 Mar 09:08:15 - 0 clients connected (0 slaves), 923888 bytes in use
+[52881] 06 Mar 09:08:20 - DB 0: 6 keys (3 volatile) in 8 slots HT.
+[52881] 06 Mar 09:08:20 - 0 clients connected (0 slaves), 923888 bytes in use
+[52881] 06 Mar 09:08:25 - DB 0: 6 keys (3 volatile) in 8 slots HT.
+[52881] 06 Mar 09:08:25 - 0 clients connected (0 slaves), 923888 bytes in use
+[52881] 06 Mar 09:08:31 - DB 0: 6 keys (3 volatile) in 8 slots HT.
+[52881] 06 Mar 09:08:31 - 0 clients connected (0 slaves), 923888 bytes in use
+[52881] 06 Mar 09:08:36 - DB 0: 6 keys (3 volatile) in 8 slots HT.
+[52881] 06 Mar 09:08:36 - 0 clients connected (0 slaves), 923888 bytes in use
+[52881] 06 Mar 09:08:41 - DB 0: 6 keys (3 volatile) in 8 slots HT.
+[52881] 06 Mar 09:08:41 - 0 clients connected (0 slaves), 923888 bytes in use
+[52881] 06 Mar 09:08:46 - DB 0: 6 keys (3 volatile) in 8 slots HT.
+[52881] 06 Mar 09:08:46 - 0 clients connected (0 slaves), 923888 bytes in use
+[52881] 06 Mar 09:08:51 - DB 0: 6 keys (3 volatile) in 8 slots HT.
+[52881] 06 Mar 09:08:51 - 0 clients connected (0 slaves), 923888 bytes in use
+[52881] 06 Mar 09:08:56 - DB 0: 6 keys (3 volatile) in 8 slots HT.
+[52881] 06 Mar 09:08:56 - 0 clients connected (0 slaves), 923888 bytes in use
+[52881] 06 Mar 09:09:01 - DB 0: 6 keys (3 volatile) in 8 slots HT.
+[52881] 06 Mar 09:09:01 - 0 clients connected (0 slaves), 923888 bytes in use
+[52881] 06 Mar 09:09:06 - DB 0: 6 keys (3 volatile) in 8 slots HT.
+[52881] 06 Mar 09:09:06 - 0 clients connected (0 slaves), 923888 bytes in use
+[52881] 06 Mar 09:09:11 - DB 0: 6 keys (3 volatile) in 8 slots HT.
+[52881] 06 Mar 09:09:11 - 0 clients connected (0 slaves), 923888 bytes in use
+[52881] 06 Mar 09:09:16 - DB 0: 6 keys (3 volatile) in 8 slots HT.
+[52881] 06 Mar 09:09:16 - 0 clients connected (0 slaves), 923888 bytes in use
+[52881] 06 Mar 09:09:21 - DB 0: 6 keys (3 volatile) in 8 slots HT.
+[52881] 06 Mar 09:09:21 - 0 clients connected (0 slaves), 923888 bytes in use
+[52881] 06 Mar 09:09:26 - DB 0: 6 keys (3 volatile) in 8 slots HT.
+[52881] 06 Mar 09:09:26 - 0 clients connected (0 slaves), 923888 bytes in use
+[52881] 06 Mar 09:09:31 - DB 0: 6 keys (3 volatile) in 8 slots HT.
+[52881] 06 Mar 09:09:31 - 0 clients connected (0 slaves), 923888 bytes in use
+[52881] 06 Mar 09:09:36 - DB 0: 6 keys (3 volatile) in 8 slots HT.
+[52881] 06 Mar 09:09:36 - 0 clients connected (0 slaves), 923888 bytes in use
+[52881] 06 Mar 09:09:41 - DB 0: 6 keys (3 volatile) in 8 slots HT.
+[52881] 06 Mar 09:09:41 - 0 clients connected (0 slaves), 923888 bytes in use
+[52881] 06 Mar 09:09:44 # Received SIGTERM, scheduling shutdown...
+[52881] 06 Mar 09:09:44 # User requested shutdown...
+[52881] 06 Mar 09:09:44 * Saving the final RDB snapshot before exiting.
+[52881] 06 Mar 09:09:44 * DB saved on disk
+[52881] 06 Mar 09:09:44 * Removing the pid file.
+[52881] 06 Mar 09:09:44 # Redis is now ready to exit, bye bye...

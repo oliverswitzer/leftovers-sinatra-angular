@@ -97,7 +97,7 @@ module Name
     end
 
     post '/confirm' do
-      Confirmation.deliver(params[:number], params[:pickup_id])
+      # Confirmation.deliver(params[:number], params[:pickup_id])
       redirect "/#/pickups/#{params[:pickup_id]}"
     end
 

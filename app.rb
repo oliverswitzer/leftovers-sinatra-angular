@@ -10,12 +10,32 @@ enable :sessions
 
 # Run with rackup -E development
 module App
+  class Login < Sinatra::Application
+    get '/login' do 
+      erb :login
+    end
+
+    post '/login' do
+      if params[:username] == 'admin' && params[:password] == 'admin'
+        session['user_name'] = params[:username]
+        redirect '/'
+      else
+        flash[:error] = "Wrong username or password"
+        redirect '/login'
+      end 
+    end
+
+    get '/logout' do 
+      session['user_name'] = nil
+      redirect '/login'
+    end
+  end
+
   class API < Sinatra::Application
 
     configure :development do 
       set :database, "sqlite3:///database.db"
     end
-
 
     configure :production do
       db = URI.parse(ENV['DATABASE_URL'] || 'postgres:///localhost/mydb')
@@ -35,31 +55,16 @@ module App
       set :public_folder, 'public/app'
     end
 
-    get '/login' do 
-      erb :login
-    end
+    before do
+      pass if %w[login logout].include? request.path_info.split('/')[1]
 
-    post '/login' do
-      if params[:username] == 'admin' && params[:password] == 'admin'
-        session['user_name'] = params[:username]
-        redirect '/'
-      else
-        flash[:error] = "Wrong username or password"
-        redirect '/login'
-      end 
-    end
-
-    get '/logout' do 
-      session['user_name'] = nil
-      redirect '/login'
+      if !logged_in?
+        halt erb :not_logged_in
+      end
     end
 
     get '/' do
-      if logged_in?
-        File.read(File.join('public/app', 'index.html'))
-      else
-        halt erb :not_logged_in
-      end
+      File.read(File.join('public/app', 'index.html'))
     end
 
     # http://www.dotnetguy.co.uk/post/2011/10/31/convert-dates-between-ruby-and-javascript/

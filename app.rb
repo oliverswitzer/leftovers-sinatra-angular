@@ -8,15 +8,8 @@ set :server, 'thin'
 set :sockets, []
 enable :sessions
 
-<<<<<<< HEAD
 # Run with rackup -E development
 module Name
-  class App < Sinatra::Application
-=======
-# Run with rackup -E production
-module App
->>>>>>> c37490d292e5cb19c3256f4108b81bef881300b4
-
   class API < Sinatra::Application
 
     configure :development do 
@@ -42,8 +35,11 @@ module App
       set :public_folder, 'public/app'
     end
 <<<<<<< HEAD
+<<<<<<< HEAD
  
 =======
+=======
+>>>>>>> 89eb67e10dfbd34d1514800e1303541ee22f72a3
 
     get '/login' do 
       erb :login
@@ -53,13 +49,17 @@ module App
       if params[:username] == 'admin' && params[:password] == 'admin'
         session['user_name'] = params[:username]
       else
-        flash[:error] = "You IDIOT"
+        flash[:error] = "Wrong username or password"
         redirect '/login'
       end 
     end
 
+<<<<<<< HEAD
 >>>>>>> c37490d292e5cb19c3256f4108b81bef881300b4
     get '/' do
+=======
+     get '/' do
+>>>>>>> 89eb67e10dfbd34d1514800e1303541ee22f72a3
       File.read(File.join('public/app', 'index.html'))
     end
 

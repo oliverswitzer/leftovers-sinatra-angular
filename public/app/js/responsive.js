@@ -8,7 +8,6 @@ $(function () {
 
   $sectionContainer.css("top", windowHeight);
   $bgimg.css("height", windowHeight);
-
   setTimeout(function() {
     // var windowHeight = $(window).height();
     // var tableWidth = $(".container").width();

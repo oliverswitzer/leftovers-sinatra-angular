@@ -8,7 +8,7 @@ set :server, 'thin'
 set :sockets, []
 enable :sessions
 
-# Run with rackup -E production
+# Run with rackup -E development
 module App
   class API < Sinatra::Application
 
@@ -49,8 +49,17 @@ module App
       end 
     end
 
-     get '/' do
-      File.read(File.join('public/app', 'index.html'))
+    get '/logout' do 
+      session['user_name'] = nil
+      redirect '/login'
+    end
+
+    get '/' do
+      if logged_in?
+        File.read(File.join('public/app', 'index.html'))
+      else
+        halt erb :not_logged_in
+      end
     end
 
     # http://www.dotnetguy.co.uk/post/2011/10/31/convert-dates-between-ruby-and-javascript/
@@ -114,6 +123,15 @@ module App
       # Confirmation.deliver(params[:number], params[:pickup_id])
       redirect "/#/pickups/#{params[:pickup_id]}"
     end
+    
+    #helpers
+    
+    helpers do
+      def logged_in?
+        session['user_name'] #add token check
+      end
+
+    end
 
     # get '/:filename' do
     #   respond_to do |f|
@@ -122,6 +140,8 @@ module App
 
     #   redirect '/'
     # end
+
+
 
   end
 end

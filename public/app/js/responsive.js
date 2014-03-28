@@ -9,6 +9,7 @@ $(function () {
   $sectionContainer.css("top", windowHeight);
   $bgimg.css("height", windowHeight);
 
+<<<<<<< HEAD
   if( /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) { //if on a mobile device
     $("body").css("font-size", "2em");
     $(".container").css("margin-top", 0);
@@ -22,4 +23,15 @@ $(function () {
       $bgimg.css("background-position", coords);
     }); 
   } 
+=======
+  setTimeout(function() {
+    // var windowHeight = $(window).height();
+    // var tableWidth = $(".container").width();
+    // $('.container').css("margin-left", -tableWidth/1.92);
+    $('.bgimg').css("height", windowHeight);
+    if( /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+        $("#pac-input").css("width", "1.2em");
+    }
+    }, 10);  
+>>>>>>> c37490d292e5cb19c3256f4108b81bef881300b4
 });

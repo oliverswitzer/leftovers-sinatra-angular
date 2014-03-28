@@ -1,0 +1,16 @@
+<!-- login.erb -->
+
+<div class="container">
+  <div id="daform" class="darkblue">
+    <form method="POST" class="form-horizontal" role="form" action="/login">
+
+      <h2><%= flash[:error] %></h2>
+      <label for="username">Username</label>
+      <input class="form-control" id="username" type="text" name="username"></input>
+      <br>
+      <label for="password">Password</label>
+      <input class="form-control" id="password" type="password" name="password"></input>
+      <input class="form-control" type="submit"></input>
+    </form>
+  </div>
+</div>

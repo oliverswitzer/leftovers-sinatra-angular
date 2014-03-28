@@ -1,7 +1,7 @@
 require './app.rb'
 require './middleware/pickup_backend'
 
-use Name::PickupBackend
+use App::PickupBackend
 
 run App::API.new
 

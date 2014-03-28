@@ -2,7 +2,7 @@ require 'faye/websocket'
 require 'thread'
 require 'json'
 
-module Name
+module App
   class PickupBackend
     KEEPALIVE_TIME = 15 # in seconds
     # CHANNEL        = "pickups"

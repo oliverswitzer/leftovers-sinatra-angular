@@ -9,7 +9,7 @@ set :sockets, []
 enable :sessions
 
 # Run with rackup -E development
-module Name
+module App
   class API < Sinatra::Application
 
     configure :development do 
@@ -34,12 +34,6 @@ module Name
       set :root, File.dirname(__FILE__)
       set :public_folder, 'public/app'
     end
-<<<<<<< HEAD
-<<<<<<< HEAD
- 
-=======
-=======
->>>>>>> 89eb67e10dfbd34d1514800e1303541ee22f72a3
 
     get '/login' do 
       erb :login
@@ -55,13 +49,17 @@ module Name
       end 
     end
 
-<<<<<<< HEAD
->>>>>>> c37490d292e5cb19c3256f4108b81bef881300b4
+    get '/logout' do 
+      session['user_name'] = nil
+      redirect '/login'
+    end
+
     get '/' do
-=======
-     get '/' do
->>>>>>> 89eb67e10dfbd34d1514800e1303541ee22f72a3
-      File.read(File.join('public/app', 'index.html'))
+      if logged_in?
+        File.read(File.join('public/app', 'index.html'))
+      else
+        halt erb :not_logged_in
+      end
     end
 
     # http://www.dotnetguy.co.uk/post/2011/10/31/convert-dates-between-ruby-and-javascript/
@@ -125,6 +123,15 @@ module Name
       # Confirmation.deliver(params[:number], params[:pickup_id])
       redirect "/#/pickups/#{params[:pickup_id]}"
     end
+    
+    #helpers
+    
+    helpers do
+      def logged_in?
+        session['user_name'] #add token check
+      end
+
+    end
 
     # get '/:filename' do
     #   respond_to do |f|
@@ -133,6 +140,8 @@ module Name
 
     #   redirect '/'
     # end
+
+
 
   end
 end

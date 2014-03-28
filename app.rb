@@ -10,27 +10,6 @@ enable :sessions
 
 # Run with rackup -E development
 module App
-  class Login < Sinatra::Application
-    get '/login' do 
-      erb :login
-    end
-
-    post '/login' do
-      if params[:username] == 'admin' && params[:password] == 'admin'
-        session['user_name'] = params[:username]
-        redirect '/'
-      else
-        flash[:error] = "Wrong username or password"
-        redirect '/login'
-      end 
-    end
-
-    get '/logout' do 
-      session['user_name'] = nil
-      redirect '/login'
-    end
-  end
-
   class API < Sinatra::Application
 
     configure :development do 
@@ -63,6 +42,28 @@ module App
       end
     end
 
+    #Login
+    get '/login' do 
+      erb :login
+    end
+
+    post '/login' do
+      if params[:username] == 'admin' && params[:password] == 'admin'
+        session['user_name'] = params[:username]
+        redirect '/'
+      else
+        flash[:error] = "Wrong username or password"
+        redirect '/login'
+      end 
+    end
+
+    get '/logout' do 
+      session['user_name'] = nil
+      redirect '/login'
+    end
+
+
+    # Core App
     get '/' do
       File.read(File.join('public/app', 'index.html'))
     end

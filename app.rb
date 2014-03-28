@@ -44,7 +44,7 @@ module App
       if params[:username] == 'admin' && params[:password] == 'admin'
         session['user_name'] = params[:username]
       else
-        flash[:error] = "You IDIOT"
+        flash[:error] = "Wrong username or password"
         redirect '/login'
       end 
     end

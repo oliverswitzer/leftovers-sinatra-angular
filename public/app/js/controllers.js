@@ -2,18 +2,17 @@
 
 var leftoversControllers = angular.module('leftoversControllers',[]);
 
-leftoversControllers.controller('PickupListCtrl', ['$scope','$http', '$routeParams',
-	function($scope, $http, $routeParams){
-		// navigator.geolocation.getCurrentPosition(function(position){ latlng = position.coords.longitude + ',' + position.coords.latitude });
-    // $routeParams.latlng = latlng;
+leftoversControllers.controller('PickupListCtrl', ['$scope','$http', '$routeParams', '$timeout',
+	function($scope, $http, $routeParams, $timeout){
+
     $scope.getPickups = function(){
       $http.get('/pickups.json').success(function(data, status, headers, config) {
           $scope.pickups = data
           console.log('Fetched data!');
         });
     };
-
-    $scope.orderProp = 'closing_time';
+    $scope.getDate = function(date){return new Date(date.replace("T"," ").replace("Z",""))}
+    $scope.orderProp = '-closing_time';
     $scope.getPickups();
 }]);
 
@@ -21,15 +20,11 @@ leftoversControllers.controller('PickupDetailCtrl', ['$scope','$http', '$routePa
 	function($scope, $http, $routeParams){
 		$http.get('/pickups/' + $routeParams.id + '.json').success(function(data){
 			$scope.pickup = data;
+      var closing_time = $scope.pickup.closing_time;
+      $scope.pickup.closing_time = new Date(closing_time.replace("T"," ").replace("Z",""));
 		});
-}]);
 
-// app.controller('MainCtrl', function($scope, Poller) {
-//   $scope.name = 'World';
-//   $scope.data = Poller.data;
-// });
-// app.controller('StartCtrl',function(){});
-// app.run(function(Poller) {});
+}]);
 
 
 

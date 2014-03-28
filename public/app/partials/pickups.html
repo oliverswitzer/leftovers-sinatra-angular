@@ -1,38 +1,30 @@
-<div id="big_container">
-  <div class="container">
+<div id="big_container" jquery-load>
+  <div class="main-container container">
   <h1>Find restaurants that are giving away food</h1>
     <div class="pickups-header darkgreen">
       <form class="form-inline">
         <div class="form-group">
-          <label for="pickup-search">Find a restaurant</label>
-          <input ng-model="query" size="55" class="search-input form-control" id="pickup-search" placeholder="Search by borough, food description or restaurant name"></input>
+          <label for="pickup-search"><span>Find a restaurant:</span></label>
+          <input ng-model="query" size="45" class="search-input form-control" id="pickup-search" placeholder="Search by borough, food description or restaurant"></input>
         </div>
         <div class="form-group order-by">
-          <label for="pickup-order">Order by:</label>
+          <span><label for="pickup-order">Order by:</label></span>
           <select ng-model="orderProp" class="form-control search-input" id="pickup-order">
             <option value="name">Name</option>
             <option value="address">Address</option>
-            <option value="closing_time">Closing Time</option>
+            <option value="-closing_time">Closing Time</option>
             <option value="meals">Food Quantity</option>
           </select>
         </div>
         <div class="form-group new-pickup">
-          <div class="form-group">
-            <label for="new-pickup">Got Food?</label>
-          </div>
           <div class="form-group search-input">
             <a href="/pickups/new"><submit id="new-pickup" class="form-control">New Pickup</submit></a>
           </div>
-
         </div>
     </form>
   </div>
     
       
-
-    
-
-   
     <table class="table">
       <tr>
         <th>Restaurant Name</th>
@@ -41,13 +33,13 @@
         <th>Quantity (# meals)</th>
         <th>Closing Time</th>
       </tr>
-      <tr ng-repeat="pickup in pickups | filter: query | orderBy:orderProp" data-id={{pickup.id}} id="all-pickups">
+      <tr ng-repeat="pickup in pickups | filter: query | orderBy:orderProp" confirm-button data-id={{pickup.id}} id="all-pickups">
         <td>{{pickup.restaurant.name}}</td>
         <td>{{pickup.restaurant.address}}</td>
         <td>{{pickup.food_description}}</td>
         <td>{{pickup.meals}}</td>
-        <td>{{pickup.closing_time | date: 'short'}}</td>
-        <td><a href="#/pickups/{{pickup.id}}"><button class="confirm-pickup-btn" hidden>Confirm Pickup</button></a></td>
+        <td>{{getDate(pickup.closing_time) | date: 'short' }}</td>
+        <td><a href="#/pickups/{{pickup.id}}"><button class="confirm-pickup-btn form-control">Pickup?</button></a></td>
       </tr>
 
     </table>

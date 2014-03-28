@@ -42,6 +42,8 @@ function initialize() {
                                                 longitude: place.geometry.location.e,
                                                 phone: place.formatted_phone_number
                                               }));
+      $(".new-pickup-header span").first().text(place.name);
+      $(".new-pickup-header span").last().text("(" + place.formatted_address + ")")
 
       // If the place has a geometry, then present it on a map.
       if (place.geometry.viewport) {

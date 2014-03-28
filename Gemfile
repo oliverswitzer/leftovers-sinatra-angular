@@ -11,6 +11,7 @@ gem "mail"
 gem 'sidekiq'
 gem 'redis'
 gem 'sinatra-flash'
+gem 'twilio-ruby' 
 
 group :development do
   gem "sqlite3"

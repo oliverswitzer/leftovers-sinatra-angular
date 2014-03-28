@@ -1,4 +1,4 @@
-  require 'bundler'
+require 'bundler'
 Bundler.require
 require 'sinatra/activerecord'
 
@@ -10,7 +10,6 @@ enable :sessions
 
 # Run with rackup -E production
 module App
-
   class API < Sinatra::Application
 
     configure :development do 
@@ -49,7 +48,7 @@ module App
       end 
     end
 
-    get '/' do
+     get '/' do
       File.read(File.join('public/app', 'index.html'))
     end
 
@@ -94,7 +93,6 @@ module App
     end
 
     get '/pickups' do
-      Confirmation.deliver
       redirect '/#/pickups'
     end
 
@@ -109,6 +107,11 @@ module App
 
     put '/pickups/:id' do
 
+    end
+
+    post '/confirm' do
+      # Confirmation.deliver(params[:number], params[:pickup_id])
+      redirect "/#/pickups/#{params[:pickup_id]}"
     end
 
     # get '/:filename' do

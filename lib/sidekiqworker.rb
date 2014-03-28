@@ -1,24 +1,21 @@
-# sidekiqworker.rb
-require 'mail'
-
 class SidekiqWorker
   include Sidekiq::Worker
 
-  def perform(name, count)
-    sleep(10)
-    puts "doing hard work #{name}, #{count}"
-
-    mail = Mail.new do
-      from    'keithwilliamsjr@gmail.com'
-      to      'oliverswitzer@gmail.com'
-      subject 'Worky workie'
-      body    "IT WORKS!"
-    end
-
-    Mail.defaults do
-      delivery_method :smtp, address: "localhost", port: 1025
-    end
-
-    mail.deliver
+  def perform(number, pickup_id)
+    pickup = Pickup.find(pickup_id)
+    keys = YAML::load_file("data/keys.yml")
+    # put your own credentials here 
+    account_sid = 'AC3552e9a7f1c9aaadacbf1ed005d67b75'
+    auth_token = keys["TWILLIO"] 
+     
+    # set up a client to talk to the Twilio REST API 
+    @client = Twilio::REST::Client.new account_sid, auth_token 
+    confirmation_num = "" 
+    4.times { confirmation_num << rand(1..9).to_s } 
+    @client.account.messages.create({
+      :from => '+12679662099', 
+      :to => number, 
+      :body => "Rescuisine Confirmation Number: #{confirmation_num} for pickup at #{pickup.restaurant.name} #{pickup.restaurant.address} on #{pickup.closing_time.strftime("%m/%d/%y %r")}" 
+    })
   end
 end

@@ -1,23 +1,44 @@
-<div class="container">
+<div class="main-container container">
   <div class="row">
     <div class="col-md-12 center-inner">
       <h1>Pickup confirmation page for {{pickup.restaurant.name}}</h1>
+      <h3>({{pickup.restaurant.address}})</h3>
       <img src="http://maps.googleapis.com/maps/api/staticmap?size=600x300&maptype=roadmap
-      &markers=color:blue|{{pickup.restaurant.latitude}},{{pickup.restaurant.longitude}}&sensor=false">
+      &markers=color:blue|{{pickup.restaurant.latitude}},{{pickup.restaurant.longitude}}&sensor=false" class="static-map">
     </div>
   </div>
-  <div class="row pickup-details">
-    <div class="col-md-6 details restaurant">
-      <h3>Closing time: {{pickup.closing_time | date: 'short'}}</h3>
-      <h3>Restaurant: {{pickup.restaurant.name}}</h3>
-      <h3>Phone number: {{pikcup.restaurant.phone}}</h3>
+  <div class="pickup-details">
+    
+    <div class="row">
+      <div class="details food">
+        <h1>Food Details</h1>
+        <h3>Food description: {{pickup.food_description}}</h3>
+        <h3>Food quantity: {{pickup.meals}}</h3>
+      </div>
     </div>
- 
-    <div class="col-md-6 details food">
-      <h3>Food description: {{pickup.food_description}}</h3>
-      <h3>Food quantity: {{pickup.meals}}</h3>
+
+    <div class="row">
+      <div class="details restaurant">
+        <h1>Restaurant Details</h1>
+        <h3>Closing time: {{pickup.closing_time | date: 'short'}}</h3>
+        <h3>Restaurant: {{pickup.restaurant.name}}</h3>
+        <h3>Phone number: {{pickup.restaurant.phone}}</h3>
+      </div>
     </div>
+
+    <div class="row">
+      <div class="details phone">
+        <form method="POST" class="center" action="/confirm" >
+          <input type="hidden" name="pickup_id" value={{pickup.id}}>
+          <h1>Your phone number</h1>
+          <input id="number" value="+13475551089" class="form-control" type="tel" name="number"></input>
+          <input class="form-control" type="submit" value="Confirm Pickup"></input>
+        </form>
+      </div>
+    </div>
+   
   </div>
+  
   
   
 </div>

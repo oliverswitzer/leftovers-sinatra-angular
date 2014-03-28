@@ -18,6 +18,8 @@ GEM
       tzinfo (~> 0.3.37)
     arel (4.0.2)
     atomic (1.1.14)
+    bcrypt (3.1.7)
+    bcrypt-ruby (3.1.2)
     bond (0.4.3)
     builder (3.1.4)
     celluloid (0.15.2)
@@ -114,6 +116,8 @@ PLATFORMS
 
 DEPENDENCIES
   activerecord
+  bcrypt (~> 3.1.7)
+  bcrypt-ruby
   debugger
   faye-websocket
   mail

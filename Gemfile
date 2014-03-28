@@ -12,6 +12,8 @@ gem 'sidekiq'
 gem 'redis'
 gem 'sinatra-flash'
 gem 'twilio-ruby' 
+gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt-ruby'
 
 group :development do
   gem "sqlite3"

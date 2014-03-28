@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140211185143) do
+ActiveRecord::Schema.define(version: 20140328215328) do
 
   create_table "pickups", force: true do |t|
     t.integer  "restaurant_id"
@@ -42,6 +42,13 @@ ActiveRecord::Schema.define(version: 20140211185143) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "name"
+  end
+
+  create_table "users", force: true do |t|
+    t.string   "name"
+    t.string   "password_digest"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
 end

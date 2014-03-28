@@ -10,6 +10,7 @@ gem "faye-websocket"
 gem "mail"
 gem 'sidekiq'
 gem 'redis'
+gem 'sinatra-flash'
 
 group :development do
   gem "sqlite3"

@@ -3,4 +3,4 @@ require './middleware/pickup_backend'
 
 use Name::PickupBackend
 
-run Name::App.new
+run App::API.new

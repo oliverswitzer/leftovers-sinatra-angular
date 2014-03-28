@@ -6,11 +6,12 @@ Dir["./lib/*.rb"].each {|file| require file }
 
 set :server, 'thin'
 set :sockets, []
+enable :sessions
 
 # Run with rackup -E production
-module Name
-  class App < Sinatra::Application
+module App
 
+  class API < Sinatra::Application
 
     configure :development do 
       set :database, "sqlite3:///database.db"
@@ -35,7 +36,18 @@ module Name
       set :public_folder, 'public/app'
     end
 
-    
+    get '/login' do 
+      erb :login
+    end
+
+    post '/login' do
+      if params[:username] == 'admin' && params[:password] == 'admin'
+        session['user_name'] = params[:username]
+      else
+        flash[:error] = "You IDIOT"
+        redirect '/login'
+      end 
+    end
 
     get '/' do
       File.read(File.join('public/app', 'index.html'))

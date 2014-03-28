@@ -48,6 +48,7 @@ module Name
     post '/login' do
       if params[:username] == 'admin' && params[:password] == 'admin'
         session['user_name'] = params[:username]
+        redirect '/'
       else
         flash[:error] = "Wrong username or password"
         redirect '/login'

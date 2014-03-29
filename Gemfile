@@ -15,7 +15,13 @@ gem 'twilio-ruby'
 gem 'bcrypt', '~> 3.1.7'
 gem 'bcrypt-ruby'
 
-group :development do
+group :development, :test do
+  gem "rspec"
+  gem "capybara"
+  gem "factory_girl"
+  gem "faker"
+  gem "simplecov"
+  gem "pry"
   gem "sqlite3"
   gem "shotgun"
   gem "tux"

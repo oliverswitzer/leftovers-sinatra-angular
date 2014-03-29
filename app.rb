@@ -1,7 +1,6 @@
 require 'bundler'
 Bundler.require
 require 'sinatra/activerecord'
-require 'sinatra/session_auth'
 
 Dir["./lib/*.rb"].each {|file| require file }
 
@@ -11,13 +10,11 @@ enable :sessions
 
 # Run with rackup -E development
 module App
-<<<<<<< HEAD
-
-=======
->>>>>>> 34c1a4e838ad004f51fc3e4e35f54622a7fc1305
   class API < Sinatra::Application
 
-    register SessionAuth
+    configure :test do 
+      set :database, "sqlite3:///test-database.db"
+    end
 
     configure :development do 
       set :database, "sqlite3:///database.db"
@@ -137,24 +134,11 @@ module App
       redirect "/#/pickups/#{params[:pickup_id]}"
     end
     
-    #helpers
-    
-    helpers do
+    helpers do     
       def logged_in?
         session['user_name'] #add token check
       end
-
     end
-
-    # get '/:filename' do
-    #   respond_to do |f|
-    #     f.js { redirect}
-    #   end
-
-    #   redirect '/'
-    # end
-
-
 
   end
 end

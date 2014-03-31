@@ -1,6 +1,6 @@
 # spec_helper.rb
 
-ENV['RACK_ENV'] = "test"
+# ENV['RACK_ENV'] = "test"
 
 # This file is copied to spec/ when you run 'rails generate rspec:install'
 require 'rubygems'

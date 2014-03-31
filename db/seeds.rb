@@ -5,7 +5,7 @@ Restaurant.create!(
     )
 Restaurant.create!(
     "name" => "Test",
-    "address" => "78 Poop Street",
+    "address" => "78 Food Street",
     "phone" => "718-555-0808"
     )
 Restaurant.create!(

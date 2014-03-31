@@ -1,10 +1,10 @@
-# shelter.rb
+# restaurant.rb
 
 require 'faker'
 
 FactoryGirl.define do 
-  factory :shelter do
-    name { "HELLO WORLD shelter" }
+  factory :restaurant do
+    name { "HELLO WORLD restaurant" }
     latitude { Faker::Address.latitude }
     longitude { Faker::Address.longitude }
     phone { Faker::PhoneNumber.phone_number }

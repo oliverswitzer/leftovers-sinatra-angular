@@ -2,9 +2,7 @@ require './app.rb'
 require './middleware/pickup_backend'
 require 'pry'
 
-binding.pry
+use Name::PickupBackend
 
-use App::PickupBackend
-
-run App::API.new
+run Name::API.new
 

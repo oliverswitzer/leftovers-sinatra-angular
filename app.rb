@@ -9,7 +9,7 @@ set :sockets, []
 enable :sessions
 
 # Run with rackup -E development
-module App
+module Name
   class API < Sinatra::Application
 
     configure :test do 

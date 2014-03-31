@@ -1,6 +1,7 @@
 require 'bundler'
 Bundler.require
 require 'sinatra/activerecord'
+require 'debugger'
 
 Dir["./lib/*.rb"].each {|file| require file }
 

@@ -11,10 +11,13 @@ require 'rspec'
 require 'rack/test'
 require 'factory_girl'
 require 'capybara'
+require 'capybara/rspec'
+require 'capybara/dsl'
 require 'simplecov'
 require File.join(File.dirname(__FILE__), '../app')
 
 SimpleCov.start do 
+  add_filter '/data/'
   add_filter '/db/'    
   add_filter '/config/'
   add_filter '/middlware/'
@@ -33,6 +36,9 @@ def app
   Sinatra::Application
 end
 
+#Set Capybara up with rack app
+Capybara.app = Name::API
+
 # require factories
 Dir[File.dirname(__FILE__)+"/factories/*.rb"].each {|file| require file }
 
@@ -41,4 +47,5 @@ Dir[File.dirname(__FILE__)+"/factories/*.rb"].each {|file| require file }
 RSpec.configure do |config|
   config.include Rack::Test::Methods
   config.include FactoryGirl::Syntax::Methods
+  config.include Capybara::DSL
 end

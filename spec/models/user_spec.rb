@@ -3,8 +3,8 @@ require_relative "../spec_helper"
 
 describe User do 
     it "should create a user" do
-      user = FactoryGirl.create(:user)
-      expect(user.name).to eq "User1"
+      user = FactoryGirl.create(:user, :name => "DaDude", :password => "Boomshakala", :password_confirmation => "Boomshakala")
+      expect(user.name).to eq "DaDude"
       expect(user.password).to eq "Boomshakala"
     end
   

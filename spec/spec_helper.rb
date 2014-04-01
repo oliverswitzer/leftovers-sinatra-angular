@@ -15,11 +15,9 @@ require 'capybara/rspec'
 require 'capybara/dsl'
 require 'simplecov'
 require 'database_cleaner'
+require 'pry'
 require File.join(File.dirname(__FILE__), '../app')
 
-SimpleCov.start do
-  add_group 'Models', 'lib/'
-end
 
 # set test environment
 set :environment, :test

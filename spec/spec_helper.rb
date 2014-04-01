@@ -14,6 +14,7 @@ require 'capybara'
 require 'capybara/rspec'
 require 'capybara/dsl'
 require 'simplecov'
+require 'database_cleaner'
 require File.join(File.dirname(__FILE__), '../app')
 
 SimpleCov.start do 
@@ -41,6 +42,13 @@ Capybara.app = Name::API
 
 # require factories
 Dir[File.dirname(__FILE__)+"/factories/*.rb"].each {|file| require file }
+
+#Setup Database Cleaner
+begin
+  DatabaseCleaner.strategy = :transaction #rollsback the DB
+rescue NameError
+  raise "You need to add database_cleaner to your Gemfile (in the :test group) if you wish to use it."
+end
 
 # establish in-memory database for testing
 

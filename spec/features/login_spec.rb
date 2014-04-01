@@ -1,12 +1,10 @@
 require_relative '../spec_helper'
 require 'pry'
-require 'database_cleaner'
 
 # include Capybara::DSL
 
 describe 'Logging in a user' do
   before do
-    DatabaseCleaner.strategy = :transaction #rollsback the DB
     DatabaseCleaner.start #Setup of test
     @user = FactoryGirl.create(:user)
     visit "http://localhost:9292/login"

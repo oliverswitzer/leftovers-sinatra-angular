@@ -53,6 +53,7 @@ module Name
     end
 
     post '/login' do
+      debugger
       if params[:username] == 'admin' && params[:password] == 'admin'
         session['user_name'] = params[:username]
         redirect '/'

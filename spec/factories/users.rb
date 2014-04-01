@@ -2,9 +2,10 @@ require 'faker'
 
 FactoryGirl.define do 
   factory :user do
+    pw = Faker::Internet.password 
     name {Faker::Internet.user_name}
-    password {Faker::Internet.password} 
-    password_confirmation {Faker::Internet.password} 
+    password pw
+    password_confirmation pw 
   end
 end
 

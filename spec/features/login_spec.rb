@@ -6,8 +6,8 @@ require 'database_cleaner'
 
 describe 'Logging in a user' do
   before do
-    DatabaseCleaner.strategy = :transaction
-    DatabaseCleaner.start # usually this is called in setup of a test
+    DatabaseCleaner.strategy = :transaction #rollsback the DB
+    DatabaseCleaner.start #Setup of test
     @user = FactoryGirl.create(:user)
     visit "http://localhost:9292/login"
   end

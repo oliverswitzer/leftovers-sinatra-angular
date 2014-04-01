@@ -53,8 +53,9 @@ module Name
     end
 
     post '/login' do
-      debugger
-      if params[:username] == 'admin' && params[:password] == 'admin'
+      user = User.find_by_name(params[:username])
+      # if params[:username] == 'admin' && params[:password] == 'admin'
+      if BCrypt::Password.new(user.password_digest) == params[:password]
         session['user_name'] = params[:username]
         redirect '/'
       else

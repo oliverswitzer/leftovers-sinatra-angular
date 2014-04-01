@@ -7,7 +7,7 @@ describe Restaurant do
   # let(:restaurant) { create(:restaurant) }
 
   describe "validations" do
-    test_restaurant = FactoryGirl.create(:restaurant)
+    test_restaurant = FactoryGirl.build(:restaurant)
     puts test_restaurant
   end
 end

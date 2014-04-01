@@ -26,6 +26,7 @@ group :development, :test do
   gem "shotgun"
   gem "tux"
   gem "debugger"
+  gem 'database_cleaner'
 end
 
 group :production do 

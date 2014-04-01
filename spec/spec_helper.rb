@@ -6,6 +6,8 @@
 require 'rubygems'
 require 'bundler'
 Bundler.setup(:default, :test)
+require 'simplecov'
+SimpleCov.start
 require 'sinatra'
 require 'rspec'
 require 'rack/test'
@@ -13,11 +15,9 @@ require 'factory_girl'
 require 'capybara'
 require 'capybara/rspec'
 require 'capybara/dsl'
-require 'simplecov'
 require 'database_cleaner'
 require 'pry'
 require File.join(File.dirname(__FILE__), '../app')
-
 
 # set test environment
 set :environment, :test

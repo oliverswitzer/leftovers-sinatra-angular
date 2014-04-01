@@ -1,4 +1,3 @@
-
 before do
   DatabaseCleaner.start #Setup of test
 end

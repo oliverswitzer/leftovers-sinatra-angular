@@ -17,13 +17,8 @@ require 'simplecov'
 require 'database_cleaner'
 require File.join(File.dirname(__FILE__), '../app')
 
-SimpleCov.start do 
-  add_filter '/data/'
-  add_filter '/db/'    
-  add_filter '/config/'
-  add_filter '/middlware/'
-  add_filter '/spec/'
-  add_filter '/views/'
+SimpleCov.start do
+  add_group 'Models', 'lib/'
 end
 
 # set test environment

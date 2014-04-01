@@ -4,3 +4,4 @@
 redis.log
 dump.rdb
 data/keys.yml
+coverage/*

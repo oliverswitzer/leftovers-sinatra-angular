@@ -5,13 +5,13 @@ require 'pry'
 
 describe 'Logging in a user' do
   before do
-    # @user = FactoryGirl.create(:user)
+    @user = FactoryGirl.build(:user)
     visit "http://localhost:9292/login"
   end
 
   it 'passes if the user supplies valid credentials' do
-    fill_in 'username', with: "admin"
-    fill_in 'password', with: "admin"
+    fill_in 'username', with: @user.name
+    fill_in 'password', with: @user.password
     click_button 'login-btn'
     expect(current_path).to eq('/')
   end

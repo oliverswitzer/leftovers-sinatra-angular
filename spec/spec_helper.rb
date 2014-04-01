@@ -26,7 +26,6 @@ SimpleCov.start do
   add_filter '/views/'
 end
 
-
 # set test environment
 set :environment, :test
 set :run, false

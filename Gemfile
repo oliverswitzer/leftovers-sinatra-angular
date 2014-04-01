@@ -27,6 +27,8 @@ group :development, :test do
   gem "tux"
   gem "debugger"
   gem 'database_cleaner'
+  gem 'cucumber'  
+  gem 'cucumber-sinatra'
 end
 
 group :production do 

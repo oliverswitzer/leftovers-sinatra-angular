@@ -7,7 +7,7 @@ describe 'Logging in a user' do
   before do
     DatabaseCleaner.start #Setup of test
     @user = FactoryGirl.create(:user)
-    visit "http://localhost:9292/login"
+    visit "/login"
   end
 
   it 'passes if the user supplies valid credentials' do

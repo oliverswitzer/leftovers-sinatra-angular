@@ -1,6 +1,6 @@
 # Rescuisine!
 
-![Rescuisine]("public/app/img/Rescuisine_screenshot")
+![Rescuisine](public/app/img/Rescuisine_screenShot.png)
 
 Rescuisine is a web application that allows Restaurants to simply and quickly post the food they are about to throw out so Homeless Shelters can come and pick it up.
 
@@ -43,7 +43,7 @@ Application will be running on http://localhost:9292/
 
 A restaurant can create a new pickup by clicking the new pickup button
 
-![Rescuisine]("public/app/img/Rescuisine_new_pickup_btn")
+![Rescuisine](public/app/img/Rescuisine_new_pickup_btn.png)
 
 ## Credits
 

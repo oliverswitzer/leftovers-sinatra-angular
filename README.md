@@ -2,7 +2,7 @@
 
 ![Rescuisine](public/app/img/Rescuisine_screenShot.png)
 
-Rescuisine is a web application that allows Restaurants to simply and quickly post the food they are about to throw out so Homeless Shelters can come and pick it up.
+Rescuisine is a web application that allows Restaurants to simply and quickly post the food they are about to throw out so Homeless Shelter Volunteers can come and pick it up.
 
 ## Demo
 
@@ -40,12 +40,17 @@ rackup
 Application will be running on http://localhost:9292/
 
 ## How to use Rescuisine?
-
-A restaurant can create a new pickup by clicking the new pickup button
+#### For Restaurants
+A restaurant can create a new pickup by clicking the "New Pickup" button
 
 ![New Pickup](public/app/img/Rescuisine_new pickup_btn.png)
 
-A voluteer can schedule to do a pickup by clicking on any of the rows then the Pickup? button
+They will be taken to a page where they can locate their restaurant via Google Maps. Once the location is confirmed they will be taken to the actual form to create the Pickup.
+
+![New Pickup Form](public/app/img/Rescuisine_new_pickup_form.png)
+
+#### For Volunteers
+A voluteer can schedule to do a pickup by clicking on any of the rows then the "Pickup?" button
 
 ![Make Pickup](public/app/img/Rescuisine_confirm_pickup_btn.png)
 

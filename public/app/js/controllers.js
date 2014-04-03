@@ -26,6 +26,17 @@ leftoversControllers.controller('PickupDetailCtrl', ['$scope','$http', '$routePa
 
 }]);
 
+leftoversControllers.controller('PickupRequestCtrl', ['$scope','$http', '$routeParams',
+  function($scope, $http, $routeParams){
+    $scope.submit = function(pickupDate){
+      $http.get('/pickups/request/' + pickupDate.start + "&" +pickupDate.end).success(function(data){
+        // $scope.pickup = data;
+    });
+    }
+    
+
+}]);
+
 
 
 

@@ -199,6 +199,11 @@ h1 {
           box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
 }
 
+/*Pickup time picker*/
+.pickup-time-form-group input{
+  color: MidnightBlue;
+}
+
 /*background colors*/
 .darkblue {
   background-color: #3A111C;

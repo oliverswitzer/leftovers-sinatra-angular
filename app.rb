@@ -54,10 +54,12 @@ module Name
 
     post '/login' do
       user = User.find_by_name(params[:username])
-      # if params[:username] == 'admin' && params[:password] == 'admin'
-      if BCrypt::Password.new(user.password_digest) == params[:password]
-        session['user_name'] = params[:username]
-        redirect '/'
+      if user
+        # if params[:username] == 'admin' && params[:password] == 'admin'
+        if BCrypt::Password.new(user.password_digest) == params[:password]
+          session['user_name'] = params[:username]
+          redirect '/'
+        end
       else
         flash[:error] = "Wrong username or password"
         redirect '/login'
@@ -105,6 +107,18 @@ module Name
       @shelters = Shelter.new(params[:shelter])
     end
 
+    get '/pickups/request/:dates' do
+      #params[:dates].split("&")
+      debugger
+      erb :pickup_date
+    end
+
+    #Test for pickup request form times 
+    get '/pickups/request' do
+      # debugger
+      erb :pickup_date
+    end
+
     get '/pickups.json' do
       @pickups = Pickup.all
       @pickups.to_json(:include => [:restaurant, :shelter])
@@ -136,6 +150,8 @@ module Name
       # Confirmation.deliver(params[:number], params[:pickup_id])
       redirect "/#/pickups/#{params[:pickup_id]}"
     end
+
+
     
     helpers do     
       def logged_in?

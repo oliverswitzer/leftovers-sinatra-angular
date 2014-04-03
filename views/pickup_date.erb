@@ -1,0 +1,30 @@
+<script type="text/javascript" src="/js/jquery.timepicker.min.js"></script>
+
+<div class="main-container container">
+  <div id="pickup-time-form" class="darkgreen">
+    <h1 class="pickup-time-header">Time you're available to pickup</h1>
+    <form method="POST" class="form-horizontal lightgreen pickup-time-form" role="form" action="/#">
+    <div class="pickup-time-form-group">
+          <h4><label class="col-sm-2" for="pickup_time_start">Starting Time</label></h4>       
+          <div class="col-sm-2">      
+            <input id="startTime" class="timePicker" type="text" name="pickup_time[start]" />
+          </div>
+
+          <h4><label class="col-sm-2" for="pickup_time_start">Ending Time</label></h4>
+          <div class="col-sm-2">      
+            <input id="endTime" class="timePicker" type="text" name="pickup_time[end]" />
+          </div>
+          
+          <div class="col-sm-3">
+            <button type="submit" class="btn btn-default">Submit Times</button>
+          </div>
+    
+      </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    $(".timePicker").timepicker({ 'scrollDefaultNow': true });
+  });
+</script>

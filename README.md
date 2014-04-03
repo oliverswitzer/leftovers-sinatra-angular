@@ -43,7 +43,17 @@ Application will be running on http://localhost:9292/
 
 A restaurant can create a new pickup by clicking the new pickup button
 
-![Rescuisine](public/app/img/Rescuisine_new_pickup_btn.png)
+![New Pickup](public/app/img/Rescuisine_new pickup_btn.png)
+
+A voluteer can schedule to do a pickup by clicking on any of the rows then the Pickup? button
+
+![Make Pickup](public/app/img/Rescuisine_confirm_pickup_btn.png)
+
+They will then be taken to a new confirmation page where they can input their phone number.
+
+![Confirm Pickup](public/app/img/Rescuisine_confirm_pickup.png)
+
+After inputing their phone number, the restaurant and the voluteer will both receive text messages with a confirmation code for the pickup.
 
 ## Credits
 

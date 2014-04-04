@@ -43,6 +43,12 @@ leftoversApp.directive('confirmButton', function() {
     }
   });
 
+leftoversApp.directive('timepickerPickupRequest', function(){
+  return function(scope, element, attrs) { 
+    scope.pickupDate = {}
+    $(".timePicker").timepicker({ 'scrollDefaultNow': true });
+  }
+});
 
 leftoversApp.directive('jqueryLoad', function() {
     return function(scope, element, attrs) {

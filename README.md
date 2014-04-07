@@ -63,6 +63,6 @@ After inputing their phone number, the restaurant and the voluteer will both rec
 ## Credits
 
 Rescuisine was created and maintained by
-Keith Williams Jr. [Blog](http://codewardbound.tumblr.com/),[Github](https://github.com/kphillycat) and Oliver Switzer [Blog](http://allyourcodesarebelongtous.tumblr.com/), [Github](https://github.com/oliverswitzer)
+Keith Williams Jr. [Blog](http://codewardbound.tumblr.com/), [Github](https://github.com/kphillycat) and Oliver Switzer [Blog](http://allyourcodesarebelongtous.tumblr.com/), [Github](https://github.com/oliverswitzer)
 
 Rescuisine leverages technologies [Sinatra](http://www.sinatrarb.com/), [AngularJS](http://angularjs.org/), [Sidekiq](http://sidekiq.org/), [Faye](http://faye.jcoglan.com/), and [Twillio](https://www.twilio.com/) 
